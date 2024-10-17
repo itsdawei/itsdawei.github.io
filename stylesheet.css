@@ -15,7 +15,7 @@
 
 html, body {
   font-family: "Playfair Display", serif;
-  line-height: 1.6;
+  line-height: 1.4;
   color: var(--text-secondary);
   background-color: var(--bg--color);
   height: 100%;
@@ -101,7 +101,6 @@ nav a:hover {
   transform: translateX(5px);
 }
 section {
-  /* margin-bottom: 30px; */
   padding: 10px;
 }
 
@@ -182,10 +181,6 @@ footer {
 }
 
 @media (max-width: 800px) {
-  .main-content {
-    flex-direction: column;
-  }
-
   .profile-pic {
     display: none;
   }
