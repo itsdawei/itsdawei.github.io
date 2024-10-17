@@ -7,148 +7,148 @@
     <link rel="stylesheet" href="stylesheet.css" />
     <link rel="icon" type="image/png" href="./images/favicon/mallard.png">
     <link rel="alternate icon" href="./images/favicon/mallard.ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
-<body>
-    <div class="main-content">
-        <aside class="sidebar">
-            <svg class="header-pattern" xmlns="http://www.w3.org/2000/svg" width="100%" height="100%">
-                <defs>
-                    <pattern id="complex-tessellation" x="-35" y="0" width="200" height="200" patternUnits="userSpaceOnUse">
-                        <!-- x = -35 to center the pattern -->
-                        <!-- Large diamond -->
-                        <path d="M100,0 L200,100 L100,200 L0,100 Z" fill="none" stroke="#ffffff" stroke-width="2"/>
+<body class="content-area">
+            <!-- <div class="sidebar-content"> -->
+            <!--     <img src="./images/profile.jpg" alt="David Lee" class="profile-pic"> -->
+            <!--     <h3>David Haolong Lee</h3> -->
+            <!--     <li class="sidebar-item nav-hidden"><p>dhlee [at] usc.edu</p></li> -->
+            <!--     <nav> -->
+            <!--         <ul> -->
+            <!--             <li class="sidebar-item"><a href="#about">About</a></li> -->
+            <!--             <li class="sidebar-item"><a href="#publications">Publications</a></li> -->
+            <!--             <li class="sidebar-item nav-hidden"><a href="#teaching">Teaching</a></li> -->
+            <!--             <li class="sidebar-item nav-hidden"><a href="./projects.html">Projects</a></li> -->
+            <!--             <li class="sidebar-item"><a href="./writing.html">Writing</a></li> -->
+            <!--         </ul> -->
+            <!--     </nav> -->
+  <main>
+    <section id="profile">
+      <svg class="header-pattern" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+          <pattern id="complex-tessellation" x="-35" y="0" width="200" height="200" patternUnits="userSpaceOnUse">
+            <!-- Large diamond -->
+            <path d="M100,0 L200,100 L100,200 L0,100 Z" fill="none" stroke="#ffffff" stroke-width="2"/>
+            <!-- Smaller diamonds -->
+            <path d="M50,50 L100,0 L150,50 L100,100 Z" fill="none" stroke="#ffffff" stroke-width="1.5"/>
+            <path d="M50,150 L100,100 L150,150 L100,200 Z" fill="none" stroke="#ffffff" stroke-width="1.5"/>
+            <path d="M0,100 L50,50 L100,100 L50,150 Z" fill="none" stroke="#ffffff" stroke-width="1.5"/>
+            <path d="M100,100 L150,50 L200,100 L150,150 Z" fill="none" stroke="#ffffff" stroke-width="1.5"/>
+            <!-- Triangles -->
+            <path d="M50,50 L100,0 L100,50 Z" fill="none" stroke="#ffffff" stroke-width="1"/>
+            <path d="M150,50 L200,0 L200,100 Z" fill="none" stroke="#ffffff" stroke-width="1"/>
+            <path d="M50,150 L0,200 L0,100 Z" fill="none" stroke="#ffffff" stroke-width="1"/>
+            <path d="M150,150 L100,200 L200,200 Z" fill="none" stroke="#ffffff" stroke-width="1"/>
+            <!-- Squares -->
+            <rect x="75" y="75" width="50" height="50" fill="none" stroke="#ffffff" stroke-width="1"/>
+            <rect x="25" y="75" width="50" height="50" fill="none" stroke="#ffffff" stroke-width="1"/>
+            <rect x="125" y="75" width="50" height="50" fill="none" stroke="#ffffff" stroke-width="1"/>
+          </pattern>
+        </defs>
+        <rect width="100%" height="100%" fill="url(#complex-tessellation)"/>
+      </svg>
+      <img src="./images/profile.jpg" alt="Profile picture of David Haolong Lee" class="profile-pic">
+      <h1>David Haolong Lee     李昊龙</h1>
+      <ul>
+        <li><i class="fab fa-github"></i><span>GitHub</span></li>
+        <!-- Google Scholar icon as graduation cap -->
+        <li><i class="fas fa-graduation-cap icon"></i><span>Google Scholar</span></li>
+        <li><i class="fab fa-linkedin icon"></i><span>LinkedIn</span></li>
+        <li><i class="fab fa-twitter icon"></i><span>Twitter</span></li>
+        <!-- <li>CV</li> -->
+      </ul>
+    </section>
+    <section id="about">
+      <div class="about-container">
+        <p><strong>Applying to Ph.D. for Fall 2025!</strong></p>
+        <p>
+          I am a master's student in computer science at
+          <a href=www.usc.edu>University of Southern California (USC)</a>,
+          where I also completed my undergraduate studies in computer science.
+          I am a member of the <a href="https://icaros.usc.edu/">ICAROS</a>
+          lab, where I was advised by <a href="https://stefanosnikolaidis.net/">Stefanos Nikolaidis</a>
+          and mentored by <a href="https://btjanaka.net/">Bryon Tjanaka</a>.
+          I was also honored to have worked closely with
+          <a href="https://www.david-kempe.com/">David Kempe</a> and
+          <a href="https://viterbi-web.usc.edu/~shaddin/">Shaddin Dughmi</a>.
+        </p>
+        <p>
+          I am interested in quality diversity optimization,
+          the combination of theoretical and
+          empirical approaches in computer science.
+        </p>
+        <p>
+          In my free time, I like to...
+        </p>
+        <p><strong>Email</strong>: dhlee[at]usc[dot]edu</p>
+      </div>
+    </section>
 
-                        <!-- Smaller diamonds -->
-                        <path d="M50,50 L100,0 L150,50 L100,100 Z" fill="none" stroke="#ffffff" stroke-width="1.5"/>
-                        <path d="M50,150 L100,100 L150,150 L100,200 Z" fill="none" stroke="#ffffff" stroke-width="1.5"/>
-                        <path d="M0,100 L50,50 L100,100 L50,150 Z" fill="none" stroke="#ffffff" stroke-width="1.5"/>
-                        <path d="M100,100 L150,50 L200,100 L150,150 Z" fill="none" stroke="#ffffff" stroke-width="1.5"/>
+    <section id="publications">
+      <h2>Publications</h2>
+      <ul>
+        <li class="pub">
+          <span class="pub-title">dpvis: A Visual and Interactive Learning Tool for Dynamic Programming</span> <br>
+          <strong>David H. Lee</strong>, Aditya Prasad, Ramiro Deo-Campo Vuong, Tianyu Wang, Eric Han, David Kempe <br>
+          <em>Technical Symposium on Computer Science Education (SIGCSE TS)</em>, Feburary 2025.
+        </li>
+        <li class="pub">
+          <span class="pub-title">Density Descent Search for Diversity Optimization</span> <br>
+          <strong>David H. Lee</strong>, Anishalakshmi V. Palaparthi, Matthew C. Fontaine, Bryon Tjanaka, Stefanos Nikolaidis <br>
+          <em>Genetic and Evolutionary Computation Conference (GECCO)</em>, July 2024. <br>
+          <a href="https://arxiv.org/abs/2312.11331" target="_blank" rel="noreferrer">[arXiv]</a>
+        </li>
+        <li class="pub">
+          <span class="pub-title">Training Diverse High-Dimensional Controllers by Scaling Covariance Matrix Adaptation MAP-Annealing</span> <br>
+          Bryon Tjanaka, Matthew C. Fontaine, <strong>David H. Lee</strong>, Aniruddha Kalkar, Stefanos Nikolaidis <br>
+          <em>IEEE Robotics and Automation Letters (RA-L)</em>, vol. 8, no. 10, pp. 6771-6778, October 2023. <br>
+          <a href="https://arxiv.org/abs/2210.02622" target="_blank" rel="noreferrer">[arXiv]</a> |
+          <a href="https://github.com/icaros-usc/scaling-cma-mae" target="_blank" rel="noreferrer">[GitHub]</a> |
+          <a href="https://scalingcmamae.github.io/" target="_blank" rel="noreferrer">[Website]</a>
+        </li>
+        <li class="pub">
+          <span class="pub-title">pyribs: A Bare-Bones Python Library for Quality Diversity Optimization</span> <br>
+          Bryon Tjanaka, Matthew C. Fontaine, <strong>David H. Lee</strong>, Yulun Zhang, Nivedit Reddy Balam, Nathaniel Dennler, Sujay S. Garlanka, Nikitas Dimitri Klapsis, Stefanos Nikolaidis <br>
+          <em>Genetic and Evolutionary Computation Conference (GECCO)</em>, July 2023. <br>
+          <a href="https://arxiv.org/abs/2303.00191" target="_blank" rel="noreferrer">[arXiv]</a> |
+          <a href="https://github.com/icaros-usc/pyribs" target="_blank" rel="noreferrer">[GitHub]</a> |
+          <a href="https://pyribs.org" target="_blank" rel="noreferrer">[Website]</a>
+        </li>
+        <!-- <li class="pub"> -->
+        <!--   <span class="pub-title">A Uniform Parcel Delivery System Based on IoT</span> <br> -->
+        <!--   Yuhui Wang, Hongbo Zhu, Zechun Wang, <span>David H. Lee</span>, Guangyao Li <br> -->
+        <!--   <em>Advances in Internet of Things</em>, vol. 8, pp. 39-63, January 2018. <br> -->
+        <!--   <a href="https://doi.org/10.4236/ait.2018.84004" target="_blank" rel="noreferrer">[doi]</a> -->
+        <!-- </li> -->
+      </ul>
+      <h2>Articles</h2>
+      <ul>
+        <li class="pub">
+          <span class="pub-title">Upgrading CMA-ME to CMA-MAE on the Sphere Benchmark</span> <br>
+          <strong>David H. Lee</strong>, Bryon Tjanaka, Nivedit Reddy Balam, Matthew C. Fontaine, Stefanos Nikolaidis <br>
+          <!-- 2023. <br> -->
+          <a href="https://docs.pyribs.org/en/stable/tutorials/cma mae.html" target="_blank" rel="noreferrer">[Website]</a>
+        </li>
+      </ul>
+    </section>
 
-                        <!-- Triangles -->
-                        <path d="M50,50 L100,0 L100,50 Z" fill="none" stroke="#ffffff" stroke-width="1"/>
-                        <path d="M150,50 L200,0 L200,100 Z" fill="none" stroke="#ffffff" stroke-width="1"/>
-                        <path d="M50,150 L0,200 L0,100 Z" fill="none" stroke="#ffffff" stroke-width="1"/>
-                        <path d="M150,150 L100,200 L200,200 Z" fill="none" stroke="#ffffff" stroke-width="1"/>
-
-                        <!-- Squares -->
-                        <rect x="75" y="75" width="50" height="50" fill="none" stroke="#ffffff" stroke-width="1"/>
-                        <rect x="25" y="75" width="50" height="50" fill="none" stroke="#ffffff" stroke-width="1"/>
-                        <rect x="125" y="75" width="50" height="50" fill="none" stroke="#ffffff" stroke-width="1"/>
-                    </pattern>
-                </defs>
-                <rect width="100%" height="100%" fill="url(#complex-tessellation)"/>
-            </svg>
-            <div class="sidebar-content">
-                <img src="./images/profile.jpg" alt="David Lee" class="profile-pic">
-                <h3>David Haolong Lee</h3>
-                <li class="sidebar-item nav-hidden"><p>dhlee [at] usc.edu</p></li>
-                <nav>
-                    <ul>
-                        <li class="sidebar-item"><a href="#about">About</a></li>
-                        <li class="sidebar-item"><a href="#publications">Publications</a></li>
-                        <li class="sidebar-item nav-hidden"><a href="#teaching">Teaching</a></li>
-                        <li class="sidebar-item nav-hidden"><a href="./projects.html">Projects</a></li>
-                        <li class="sidebar-item"><a href="./writing.html">Writing</a></li>
-                    </ul>
-                </nav>
-            </div>
-        </aside>
-
-        <main class="content-area">
-            <section id="about">
-                <h2>About Me</h2>
-                <p><span>Applying to Ph.D. for Fall 2025!</span></p>
-                <p>
-                  I am a graduate student at <a href=www.usc.edu>USC</href> and a member of the <a href="https://icaros.usc.edu/">ICAROS</a> lab advised by <a href="https://stefanosnikolaidis.net/">Stefanos Nikolaidis</a>.
-                  I completed my undergraduate studies in Computer Science at USC.
-                  While at USC, I was honored to have had the opportunity to work closely with <a href="https://www.david-kempe.com/">David Kempe</a> and <a href="https://viterbi-web.usc.edu/~shaddin/">Shaddin Dughmi</a>.
-                </p>
-                <!-- <p> -->
-                  <!-- My research interests lie in  -->
-                <!-- </p> -->
-                <!-- <p>I have also worked on projects in CS Education, where I designed a Python library that creates interactive visualizations of Dynamic Programs.</p> -->
-            </section>
-
-            <section id="publications">
-                <h2>Publications</h2>
-                <!-- <h3>Journals</h3> -->
-                <!-- <h3>Conferences</h3> -->
-                <div class="publication">
-                    <strong>dpvis: A Visual and Interactive Learning Tool for Dynamic Programming</strong> <br>
-                    <strong>David H. Lee</strong>, Aditya Prasad, Ramiro Deo-Campo Vuong, Tianyu Wang, Eric Han, and David Kempe <br>
-                    <em>SIGCSE Technical Symposium</em>, Feburary 2025.
-                </div>
-                <div class="publication">
-                    <strong>Density Descent Search for Diversity Optimization</strong> <br>
-                    <strong>David H. Lee</strong>, Anishalakshmi V. Palaparthi, Matthew C. Fontaine, Bryon Tjanaka, Stefanos Nikolaidis <br>
-                    <em>Genetic and Evolutionary Computation Conference (GECCO)</em>, July 2024. <br>
-                    <a href="https://arxiv.org/abs/2312.11331" target="_blank" rel="noopener noreferrer">[arXiv]</a>
-                </div>
-                <div class="publication">
-                    <strong>Training Diverse High-Dimensional Controllers by Scaling Covariance Matrix Adaptation MAP-Annealing</strong> <br>
-                    Bryon Tjanaka, Matthew C. Fontaine, <strong>David H. Lee</strong>, Aniruddha Kalkar, Stefanos Nikolaidis <br>
-                    <em>IEEE Robotics and Automation Letters (RA-L)</em>, vol. 8, no. 10, pp. 6771-6778, October 2023. <br>
-                    <a href="https://arxiv.org/abs/2210.02622" target="_blank" rel="noopener noreferrer">[arXiv]</a> |
-                    <a href="https://github.com/icaros-usc/scaling-cma-mae" target="_blank" rel="noopener noreferrer">[GitHub]</a> |
-                    <a href="https://scalingcmamae.github.io/" target="_blank" rel="noopener noreferrer">[Website]</a>
-                </div>
-                <div class="publication">
-                    <strong>pyribs: A Bare-Bones Python Library for Quality Diversity Optimization</strong> <br>
-                    Bryon Tjanaka, Matthew C. Fontaine, <strong>David H. Lee</strong>, Yulun Zhang, Nivedit Reddy Balam, Nathaniel Dennler, Sujay S. Garlanka, Nikitas Dimitri Klapsis, Stefanos Nikolaidis <br>
-                    <em>Genetic and Evolutionary Computation Conference (GECCO)</em>, July 2023. <br>
-                    <a href="https://arxiv.org/abs/2303.00191" target="_blank" rel="noopener noreferrer">[arXiv]</a> |
-                    <a href="https://github.com/icaros-usc/pyribs" target="_blank" rel="noopener noreferrer">[GitHub]</a> |
-                    <a href="https://pyribs.org" target="_blank" rel="noopener noreferrer">[Website]</a>
-                </div>
-                <div class="publication">
-                    <strong>Upgrading CMA-ME to CMA-MAE on the Sphere Benchmark</strong> <br>
-                    <strong>David H. Lee</strong>, Bryon Tjanaka, Nivedit Reddy Balam, Matthew C. Fontaine, Stefanos Nikolaidis <br>
-                    <!-- 2023. <br> -->
-                    <a href="https://docs.pyribs.org/en/stable/tutorials/cma mae.html" target="_blank" rel="noopener noreferrer">[Website]</a>
-                </div>
-                <!-- <div class="publication"> -->
-                <!--     <strong>A Uniform Parcel Delivery System Based on IoT</strong> <br> -->
-                <!--     Y. Wang, H. Zhu, Z. Wang, <span>David H. Lee</span>, G. Li -->
-                <!--     <em>Advances in Internet of Things</em>, vol. 8, pp. 39-63, January 2018. -->
-                <!--     <a href="https://doi.org/10.4236/ait.2018.84004" target="_blank" rel="noopener noreferrer">[doi]</a> | -->
-                <!-- </div> -->
-
-            </section>
-
-            <section id="teaching">
-                <h2>Teaching</h2>
-                <ul>
-                    <li>
-                        <div class="course">
-                            <span class="course-title">Introduction to Algorithms and the Theory of Computing</span><br>
-                            CSCI 270 @ USC, Course Producer <br>
-                            <em><a href="https://bytes.usc.edu/cs270/" target="_blank" rel="noopener noreferrer">Spring 2024</a></em>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="course">
-                            <span class="course-title">Discrete Methods in Computer Science</span><br>
-                            CSCI 170 @ USC, Course Producer <br>
-                            <em>Spring 2023, <a href="https://viterbi-web.usc.edu/~shaddin/teaching/cs170su24/index.html" target="_blank" rel="noopener noreferrer">Summer 2023</a>, Fall 2024</em>
-                        </div>
-                    </li>
-                </ul>
-            </section>
-
-            <!-- <> -->
-            <!--     <h2>Contact</h2> -->
-            <!--     <ul> -->
-            <!--         <li> -->
-            <!--             Email: adityaprasad [at] uchicago.edu -->
-            <!--         </li> -->
-            <!--     </ul> -->
-            <!-- </section> -->
-
-            <footer>
-                <p>&copy; 2024 David Haolong Lee. All rights reserved.</p>
-            </footer>
-
-        </main>
-    </div>
+    <section id="teaching">
+      <h2>Teaching</h2>
+      <ul>
+        <li class="course">
+          <span class="course-title">Introduction to Algorithms and the Theory of Computing</span> <br>
+          CSCI 270 @ USC, Teaching Assistant <br>
+          <em><a href="https://bytes.usc.edu/cs270/" target="_blank" rel="noreferrer">Spring 2024</a></em>
+        </li>
+        <li class="course">
+          <span class="course-title">Discrete Methods in Computer Science</span><br>
+          CSCI 170 @ USC, Teaching Assistant <br>
+          <em>Spring 2023, <a href="https://viterbi-web.usc.edu/~shaddin/teaching/cs170su24/index.html" target="_blank" rel="noreferrer">Summer 2023</a>, Fall 2024</em>
+        </li>
+      </ul>
+    </section>
+  </main>
+  <footer><p>&copy; 2024 David Haolong Lee. All rights reserved.</p></footer>
 </body>
 </html>
