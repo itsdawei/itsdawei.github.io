@@ -5,13 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>David Haolong Lee's Personal Page</title>
     <link rel="stylesheet" href="stylesheet.css" />
-    <link rel="icon" type="image/png" href="./images/favicon/mallard.png">
-    <link rel="alternate icon" href="./images/favicon/mallard.ico">
+    <!-- <link rel="icon" type="image/png" href="./images/favicon/mallard.png"> -->
+    <!-- <link rel="alternate icon" href="./images/favicon/mallard.ico"> -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
 </head>
 <body class="content-area">
   <main>
-    <section id="profile">
+    <section class="profile">
       <svg class="header-pattern" xmlns="https://www.w3.org/2000/svg">
         <defs>
           <pattern id="complex-tessellation" x="-35" y="0" width="200" height="200" patternUnits="userSpaceOnUse">
@@ -35,132 +36,182 @@
         </defs>
         <rect width="100%" height="100%" fill="url(#complex-tessellation)"/>
       </svg>
-      <img src="./images/profile.jpg" alt="Profile picture of David Haolong Lee" class="profile-pic">
-      <h1>David Haolong Lee     李昊龙</h1>
-      <ul>
-        <li><i class="fab fa-github"></i><span>GitHub</span></li>
-        <!-- Google Scholar icon as graduation cap -->
-        <li><i class="fas fa-graduation-cap icon"></i><span>Google Scholar</span></li>
-        <li><i class="fab fa-linkedin icon"></i><span>LinkedIn</span></li>
-        <li><i class="fab fa-twitter icon"></i><span>Twitter</span></li>
-        <!-- <li>CV</li> -->
-      </ul>
+      <img src="./assets/profile.jpg" alt="Profile picture of David Haolong Lee" class="profile-pic">
+      <h1>David Haolong Lee 李昊龙</h1>
+      <h3>dhlee [at] usc [dot] edu</h3>
+      <div class="icon-row">
+        <a href="https://github.com/itsdawei" target="_blank" rel="noreferrer">
+          <i class="fab fa-github icon"></i><p>GitHub</p>
+        </a>
+        <a href="https://scholar.google.com/citations?user=Y7Dr1bQAAAAJ&hl=en&oi=sra" target="_blank" rel="noreferrer">
+          <i class="ai ai-google-scholar-square icon"></i><p>Google Scholar</p>
+        </a>
+        <a href="https://www.linkedin.com/in/lee-david-haolong/" target="_blank" rel="noreferrer">
+          <i class="fab fa-linkedin icon"></i><p>LinkedIn</p>
+        </a>
+        <a href="./assets/documents/david_haolong_lee_cv.pdf" target="_blank" rel="noreferrer">
+          <i class="fas fa-file-alt icon"></i><p>CV</p>
+        </a>
+      </div>
     </section>
     <section id="about">
       <div class="about-container">
         <p><strong>Currently applying to Ph.D. for Fall 2025!</strong></p>
         <p>
           I am a master's student in computer science at
-          <a href=www.usc.edu>University of Southern California (USC)</a>,
-          where I also completed my undergraduate studies in computer science.
-          I am a member of the <a href="https://icaros.usc.edu/">Interactive and Collaborative Autonomous Robotics (ICAROS)</a>
+          <a href="https://www.usc.edu">University of Southern California (USC)</a>,
+          where I also obtained my bachelor's degree in computer science with
+          <a href="https://viterbiundergrad.usc.edu/ehp">honors</a>.
+          I am a member of the <a href="https://icaros.usc.edu">Interactive and Collaborative Autonomous Robotics (ICAROS)</a>
           lab @ USC, where I am fortunate to be advised by the wonderful
-          <a href="https://stefanosnikolaidis.net/">Stefanos Nikolaidis</a>
-          and mentored by <a href="https://btjanaka.net/">Bryon Tjanaka</a>.
+          <a href="https://stefanosnikolaidis.net">Stefanos Nikolaidis</a>
+          and mentored by <a href="https://btjanaka.net">Bryon Tjanaka</a>.
           I am also honored to have worked closely with
-          <a href="https://www.david-kempe.com/">David Kempe</a> and
-          <a href="https://viterbi-web.usc.edu/~shaddin/">Shaddin Dughmi</a>.
+          <a href="https://www.david-kempe.com">David Kempe</a> and
+          <a href="https://viterbi-web.usc.edu/~shaddin">Shaddin Dughmi</a>.
         </p>
         <p>
-          I am interested in quality diversity optimization, and
-          interpretability in machine learning.
+          I am interested in continuous optimization, interpretability in
+          machine learning, robust artifical intelligence, and quality
+          diversity optimization.
           I am excited about deriving practically useful algorithms from
           theoretical computer science.
-          My work on quality diversity optimization has been primarily
-          movtivated by theoretical insight.
-
+        </p>
+        <p>
           I am committed to utilizing my skills in software engineering and
           problem solving to making positive impacts on people's life.
-          I've conceptualized an algorithm for diversity optimization
-          leveraging an improved theoretical insights of previous algorithms.
         </p>
-        <!-- <p> -->
-        <!--   I have previously worked on quality diversity optimization and -->
-        <!--   computer science education research. -->
-        <!-- </p> -->
-        <!-- <p> -->
-        <!--   In my free time, I enjoy playing volleyball, both indoor and beach. -->
-        <!-- </p> -->
-        <p><strong>Email</strong>: dhlee[at]usc[dot]edu</p>
+        <!-- <p><strong>Email</strong>: dhlee[at]usc[dot]edu</p> -->
       </div>
     </section>
 
-    <section id="publications">
+    <section class="publications">
       <h2>Publications</h2>
       <ul>
-        <li class="pub">
+        <li>
           <span class="pub-title">dpvis: A Visual and Interactive Learning Tool for Dynamic Programming</span> <br>
           <strong>David H. Lee</strong>, Aditya Prasad, Ramiro Deo-Campo Vuong, Tianyu Wang, Eric Han, David Kempe <br>
           <em>Technical Symposium on Computer Science Education (SIGCSE TS)</em>, Feburary 2025.
         </li>
-        <li class="pub">
+        <li>
           <span class="pub-title">Density Descent Search for Diversity Optimization</span> <br>
           <strong>David H. Lee</strong>, Anishalakshmi V. Palaparthi, Matthew C. Fontaine, Bryon Tjanaka, Stefanos Nikolaidis <br>
           <em>Genetic and Evolutionary Computation Conference (GECCO)</em>, July 2024. <br>
-          <a href="https://arxiv.org/abs/2312.11331" target="_blank" rel="noreferrer">[arXiv]</a>
+          <a class="card" href="https://arxiv.org/abs/2312.11331" target="_blank" rel="noreferrer">
+            <i class="ai ai-arxiv"></i><span>arXiv</span>
+          </a>
         </li>
-        <li class="pub">
+        <li>
           <span class="pub-title">Training Diverse High-Dimensional Controllers by Scaling Covariance Matrix Adaptation MAP-Annealing</span> <br>
           Bryon Tjanaka, Matthew C. Fontaine, <strong>David H. Lee</strong>, Aniruddha Kalkar, Stefanos Nikolaidis <br>
           <em>IEEE Robotics and Automation Letters (RA-L)</em>, vol. 8, no. 10, pp. 6771-6778, October 2023. <br>
-          <a href="https://arxiv.org/abs/2210.02622" target="_blank" rel="noreferrer">[arXiv]</a> |
-          <a href="https://github.com/icaros-usc/scaling-cma-mae" target="_blank" rel="noreferrer">[GitHub]</a> |
-          <a href="https://scalingcmamae.github.io/" target="_blank" rel="noreferrer">[Website]</a>
+          <a href="https://arxiv.org/abs/2210.02622" target="_blank" rel="noreferrer">
+            <i class="ai ai-arxiv"></i><span>arXiv</span>
+          </a>
+          <a href="https://github.com/icaros-usc/scaling-cma-mae" target="_blank" rel="noreferrer">
+            <i class="fab fa-github icon"></i><span>GitHub</span>
+          </a>
+          <a href="https://scalingcmamae.github.io/" target="_blank" rel="noreferrer">
+            <i class="fas fa-globe-americas icon"></i><span>Website</span>
+          </a>
         </li>
-        <li class="pub">
+        <li>
           <span class="pub-title">pyribs: A Bare-Bones Python Library for Quality Diversity Optimization</span> <br>
           Bryon Tjanaka, Matthew C. Fontaine, <strong>David H. Lee</strong>, Yulun Zhang, Nivedit Reddy Balam, Nathaniel Dennler, Sujay S. Garlanka, Nikitas Dimitri Klapsis, Stefanos Nikolaidis <br>
           <em>Genetic and Evolutionary Computation Conference (GECCO)</em>, July 2023. <br>
-          <a href="https://arxiv.org/abs/2303.00191" target="_blank" rel="noreferrer">[arXiv]</a> |
-          <a href="https://github.com/icaros-usc/pyribs" target="_blank" rel="noreferrer">[GitHub]</a> |
-          <a href="https://pyribs.org" target="_blank" rel="noreferrer">[Website]</a>
+          <a href="https://arxiv.org/abs/2303.00191" target="_blank" rel="noreferrer">
+            <i class="ai ai-arxiv"></i><span>arXiv</span>
+          </a>
+          <a href="https://github.com/icaros-usc/pyribs" target="_blank" rel="noreferrer">
+            <i class="fab fa-github icon"></i><span>GitHub</span>
+          </a>
+          <a href="https://pyribs.org" target="_blank" rel="noreferrer">
+            <i class="fas fa-globe-americas icon"></i><span>Website</span>
+          </a>
         </li>
-        <!-- <li class="pub"> -->
+        <!-- <li> -->
         <!--   <span class="pub-title">A Uniform Parcel Delivery System Based on IoT</span> <br> -->
         <!--   Yuhui Wang, Hongbo Zhu, Zechun Wang, <span>David H. Lee</span>, Guangyao Li <br> -->
         <!--   <em>Advances in Internet of Things</em>, vol. 8, pp. 39-63, January 2018. <br> -->
         <!--   <a href="https://doi.org/10.4236/ait.2018.84004" target="_blank" rel="noreferrer">[doi]</a> -->
         <!-- </li> -->
       </ul>
-      <h2>Articles</h2>
+      <h2>Manuscripts</h2>
       <ul>
-        <li class="pub">
+        <li>
           <span class="pub-title">Upgrading CMA-ME to CMA-MAE on the Sphere Benchmark</span> <br>
           <strong>David H. Lee</strong>, Bryon Tjanaka, Nivedit Reddy Balam, Matthew C. Fontaine, Stefanos Nikolaidis <br>
           <!-- 2023. <br> -->
-          <a href="https://docs.pyribs.org/en/stable/tutorials/cma_mae.html" target="_blank" rel="noreferrer">[Website]</a>
+          <a href="https://docs.pyribs.org/en/stable/tutorials/cma_mae.html" target="_blank" rel="noreferrer">
+            <i class="fa-solid fa-earth-americas icon"></i><span>Website</span>
+          </a>
         </li>
-        <li class="pub">
+        <li>
           <span class="pub-title">Quality Diversity Optimization: A Modular Framework and Continuous Density Estimation</span> <br>
-          Ramiro Deo-Campo Vuong, <strong>David H. Lee</strong>, Aditya Prasad, Yibo Wen <br>
-          <!-- May 10, 2024. -->
-          <a href="./documents/bachelors_thesis.pdf" target="_blank" rel="noreferrer">[PDF]</a>
+          <strong>David H. Lee</strong> <br>
+          Bachelor's Thesis for <a href="https://viterbiundergrad.usc.edu/ehp">W.V.T. Rusch Undergraduate Engineering Honors</a>, May 2024. <br>
+          <a href="./assets/documents/bachelors_thesis.pdf" target="_blank" rel="noreferrer">
+            <i class="fa-regular fa-file-pdf icon"></i><span>PDF</span>
+          </a>
         </li>
-        <li class="pub">
-          <span class="pub-title">An Overview of Low-rank Matrix Completion using Convex Optimization Techniques</span> <br>
+        <li>
+          <span class="pub-title">An Overview of Low-Rank Matrix Completion using Convex Optimization Techniques</span> <br>
           Ramiro Deo-Campo Vuong, <strong>David H. Lee</strong>, Aditya Prasad, Yibo Wen <br>
           <!-- May 13, 2022. -->
-          <a href="./documents/675_Project.pdf" target="_blank" rel="noreferrer">[PDF]</a> |
-          <a href="https://github.com/itsdawei/NBA-matrix-completion" target="_blank" rel="noreferrer">[GitHub]</a>
+          <a href="./assets/documents/lrmc.pdf" target="_blank" rel="noreferrer">
+            <i class="fa-regular fa-file-pdf icon"></i><span>PDF</span>
+          </a>
+          <a href="https://github.com/itsdawei/NBA-matrix-completion" target="_blank" rel="noreferrer">
+            <i class="fab fa-github icon"></i><span>GitHub</span>
+          </a>
         </li>
       </ul>
-      <!--  Low-rank matrix completion  -->
     </section>
 
-    <section id="teaching">
+    <section class="teaching">
       <h2>Teaching</h2>
       <ul>
-        <li class="course">
-          <span class="course-title">Introduction to Algorithms and the Theory of Computing</span> <br>
+        <li>
+          <span>Introduction to Algorithms and the Theory of Computing</span> <br>
           CSCI 270 @ USC, Teaching Assistant <br>
-          <em><a href="https://bytes.usc.edu/cs270/" target="_blank" rel="noreferrer">Spring 2024</a></em>
+          <em>
+            <a href="https://bytes.usc.edu/cs270/" target="_blank" rel="noreferrer">Spring 2024</a>
+          </em>
         </li>
-        <li class="course">
-          <span class="course-title">Discrete Methods in Computer Science</span><br>
+        <li>
+          <span>Discrete Methods in Computer Science</span><br>
           CSCI 170 @ USC, Teaching Assistant <br>
-          <em>Spring 2023, <a href="https://viterbi-web.usc.edu/~shaddin/teaching/cs170su24/index.html" target="_blank" rel="noreferrer">Summer 2023</a>, Fall 2024</em>
+          <em>
+            Spring 2023,
+            <a href="https://viterbi-web.usc.edu/~shaddin/teaching/cs170su24/index.html" target="_blank" rel="noreferrer">Summer 2023</a>,
+            Fall 2024
+          </em>
         </li>
       </ul>
+    </section>
+
+    <!-- <section id="awards"> -->
+    <!--   <h2>Awards</h2> -->
+    <!--   <ul> -->
+    <!--     <li class="course"> -->
+    <!--       <span class="course-title">Introduction to Algorithms and the Theory of Computing</span> <br> -->
+    <!--       CSCI 270 @ USC, Teaching Assistant <br> -->
+    <!--       <em><a href="https://bytes.usc.edu/cs270/" target="_blank" rel="noreferrer">Spring 2024</a></em> -->
+    <!--     </li> -->
+    <!--     <li class="course"> -->
+    <!--       <span class="course-title">Discrete Methods in Computer Science</span><br> -->
+    <!--       CSCI 170 @ USC, Teaching Assistant <br> -->
+    <!--       <em>Spring 2023, <a href="https://viterbi-web.usc.edu/~shaddin/teaching/cs170su24/index.html" target="_blank" rel="noreferrer">Summer 2023</a>, Fall 2024</em> -->
+    <!--     </li> -->
+    <!--   </ul> -->
+    <!-- </section> -->
+
+    <section id="fun">
+      <h2>Fun</h2>
+      <p>
+        I spend most of my free time playing volleyball (indoor and beach).
+        I also enjoy cooking (my go-to choices are mostly chinese cuisine).
+      </p>
     </section>
   </main>
   <footer><p>&copy; 2024 David Haolong Lee. All rights reserved.</p></footer>
