@@ -195,6 +195,13 @@ section {
   }
 }
 
+.fullscreen-iframe {
+  width: 100vw;      /* Full viewport width */
+  height: 100vh;     /* Full viewport height */
+  border: none;
+  display: block;    /* Ensures the iframe takes up the whole viewport */
+}
+
 footer {
   text-align: right;
   color: gray;
