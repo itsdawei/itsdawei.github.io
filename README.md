@@ -1,10 +1,10 @@
 # Personal Website
 
 ## TODO
-- Custom domain
-- Profile Picture
-- Biography
-- Resume/CV
-- List of projects
-- Contacts and other links
-- Blog (Selenium Instagram)
+- [x] Custom domain
+- [x] Profile Picture
+- [ ] Biography
+- [x] Resume/CV
+- [x] List of projects
+- [x] Contacts and other links
+- [ ] Blog (Selenium Instagram)
