@@ -1,3 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 :root {
   --bg-color: #1a1b26; /* Background */
   --surface-color: #2a2c3c; /* Surface */
@@ -15,57 +19,8 @@
 
 html,
 body {
-  /* font-family: "Playfair Display", serif; */
-  font-family:
-    ui-sans-serif,
-    system-ui,
-    -apple-system,
-    BlinkMacSystemFont,
-    Segoe UI,
-    Roboto,
-    Helvetica Neue,
-    Arial,
-    Noto Sans,
-    sans-serif,
-    Apple Color Emoji,
-    Segoe UI Emoji,
-    Segoe UI Symbol,
-    Noto Color Emoji;
-  line-height: 1.4;
-  color: var(--text-secondary);
-  background-color: var(--bg--color);
-  height: 100%;
-  margin: 0;
-  padding: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  min-height: 100vh; /* Ensure the content fills the screen height */
-}
-
-a {
-  color: var(--accent-color);
-  text-decoration: none;
-  border-radius: 12px;
-  transition: color 0.3s ease;
-}
-
-a:hover {
-  color: var(--text-primary);
-}
-
-.content-area {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: center;
-  width: 60%; /* Adjust this percentage to control the width */
-  max-width: 800px; /* Limits the maximum width */
-  height: 100%; /* Occupy only 80% of the vertical screen space */
-  max-height: 100vh; /* Limit the height to the full viewport */
-  background-color: var(--bg-color);
-  padding: 20px;
-  overflow-y: auto;
+  @apply text-secondary h-full min-h-full flex justify-center items-center;
+  line-height: 1.5;
 }
 
 .header-pattern {
@@ -78,26 +33,37 @@ a:hover {
   z-index: -1;
 }
 
-h1,
-h2,
-h3 {
-  color: var(--text-primary);
-  margin: 0;
-  font-family: "Montserrat", sans-serif;
+@layer base {
+  h1 {
+    @apply text-4xl font-bold drop-shadow-lg;
+    font-family: "Montserrat", sans-serif;
+  }
+  h2 {
+    @apply text-2xl font-bold mb-4 text-white;
+    font-family: "Montserrat", sans-serif;
+  }
+  h3 {
+    @apply text-xl font-bold;
+    font-family: "Montserrat", sans-serif;
+  }
+
+  em{
+    @apply text-gray-500;
+  }
+
+  a {
+    @apply text-accent;
+    transition: color 0.3s ease;
+  }
+
+  a:hover {
+    @apply text-white;
+  }
 }
 
-h1 {
-  font-size: 2.2em;
-  margin-bottom: 10px;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
-}
-
-section {
-  padding: 10px;
-}
 
 .icon {
-  margin: 5px;
+  @apply mx-2;
 }
 
 .profile {
@@ -114,20 +80,6 @@ section {
   text-align: center;
   color: var(--text-primary);
 
-  .profile-pic {
-    width: 100%;
-    max-width: 250px;
-    height: 250px;
-    border-radius: 50%;
-    object-fit: cover;
-    border: 5px solid var(--highlight-color);
-    margin-bottom: 20px;
-    margin-right: 30px;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
-    z-index: 2;
-    position: relative;
-  }
-
   a:hover {
     color: var(--text-primary);
     background: var(--text-secondary);
@@ -135,63 +87,8 @@ section {
 
   .icon {
     margin-left: 0;
-    margin-right: 10px;
+    margin-right: 16px;
     font-size: 32px;
-  }
-
-  .icon-row {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 10px;
-  }
-
-  .icon-row a {
-    display: flex;
-    flex-grow: 1; /* Make all items take up equal width */
-    min-width: 150px; /* Optional: Set a minimum width */
-    justify-content: center;
-    align-items: center;
-    text-decoration: none;
-    color: inherit; /* Keeps text color from changing */
-    margin: 10px;
-    padding: 0 10px;
-  }
-}
-
-.publications {
-  ul li {
-    list-style-type: none;
-    margin-left: -20px;
-    margin-bottom: 20px;
-    padding-left: 20px;
-    border-left: 3px solid var(--accent-color);
-  }
-
-  a span {
-    margin-right: 5px;
-    font-weight: 700;
-  }
-
-  .pub-title {
-    color: var(--text-primary);
-    font-weight: 800;
-  }
-}
-
-.teaching {
-  ul li {
-    list-style-type: none;
-    margin-left: -20px;
-    margin-bottom: 20px;
-    padding-left: 20px;
-    border-left: 3px solid var(--accent-color);
-  }
-
-  span {
-    color: var(--text-primary);
-    font-weight: bold;
   }
 }
 
