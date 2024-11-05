@@ -596,28 +596,12 @@ a:hover {
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
-.fixed {
-  position: fixed;
-}
-
 .absolute {
   position: absolute;
 }
 
 .inset-0 {
   inset: 0px;
-}
-
-.left-0 {
-  left: 0px;
-}
-
-.top-0 {
-  top: 0px;
-}
-
-.z-0 {
-  z-index: 0;
 }
 
 .-z-10 {
@@ -627,16 +611,6 @@ a:hover {
 .my-10 {
   margin-top: 2.5rem;
   margin-bottom: 2.5rem;
-}
-
-.my-4 {
-  margin-top: 1rem;
-  margin-bottom: 1rem;
-}
-
-.my-5 {
-  margin-top: 1.25rem;
-  margin-bottom: 1.25rem;
 }
 
 .mb-10 {
@@ -661,10 +635,6 @@ a:hover {
 
 .mt-1 {
   margin-top: 0.25rem;
-}
-
-.mt-5 {
-  margin-top: 1.25rem;
 }
 
 .block {
@@ -837,14 +807,14 @@ a:hover {
   font-style: italic;
 }
 
-.text-gray-300 {
-  --tw-text-opacity: 1;
-  color: rgb(209 213 219 / var(--tw-text-opacity));
-}
-
 .text-gray-400 {
   --tw-text-opacity: 1;
   color: rgb(156 163 175 / var(--tw-text-opacity));
+}
+
+.text-gray-500 {
+  --tw-text-opacity: 1;
+  color: rgb(107 114 128 / var(--tw-text-opacity));
 }
 
 .text-highlight {
@@ -863,10 +833,6 @@ a:hover {
 
 .opacity-15 {
   opacity: 0.15;
-}
-
-.opacity-100 {
-  opacity: 1;
 }
 
 .shadow-lg {
@@ -988,4 +954,12 @@ footer {
 .hover\:bg-gray-700:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(55 65 81 / var(--tw-bg-opacity));
+}
+
+.hover\:underline:hover {
+  text-decoration-line: underline;
+}
+
+.hover\:underline-offset-4:hover {
+  text-underline-offset: 4px;
 }

@@ -47,7 +47,7 @@ body {
     font-family: "Montserrat", sans-serif;
   }
 
-  em{
+  em {
     @apply text-gray-500;
   }
 
@@ -60,7 +60,6 @@ body {
     @apply text-white;
   }
 }
-
 
 .icon {
   @apply mx-2;
@@ -93,10 +92,10 @@ body {
 }
 
 .fullscreen-iframe {
-  width: 100vw;      /* Full viewport width */
-  height: 100vh;     /* Full viewport height */
+  width: 100vw; /* Full viewport width */
+  height: 100vh; /* Full viewport height */
   border: none;
-  display: block;    /* Ensures the iframe takes up the whole viewport */
+  display: block; /* Ensures the iframe takes up the whole viewport */
 }
 
 footer {
