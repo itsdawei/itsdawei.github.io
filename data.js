@@ -1,0 +1,124 @@
+const presentations = [
+  {
+    title:
+      "dpvis: A Visual and Interactive Learning Tool for Dynamic Programming",
+    location: "Theory Lunch @ USC Theory Group",
+    date: "Oct. 2024",
+    link: "https://davidhaolong.com/slides/theory_lunch_dpvis",
+  },
+  {
+    title: "Density Descent Search for Diversity Optimization",
+    location:
+      "Genetic and Evolutionary Computation Conference (GECCO) @ Melbourne, Australia",
+    date: "Jul. 2024",
+    link: "https://davidhaolong.com/slides/dds",
+  },
+  {
+    title:
+      "Quality Diversity Optimization: A Modular Framework and Continuous Density Estimation",
+    location:
+      "Bachelor's Thesis for W.V.T. Rusch Undergraduate Engineering Honors",
+    date: "May 2024",
+    link: "https://davidhaolong.com/slides/bachelors_thesis",
+  },
+];
+
+const publications = [
+  {
+    title:
+      "dpvis: A Visual and Interactive Learning Tool for Dynamic Programming",
+    authors:
+      "<span class='font-bold'>David H. Lee</span>, Aditya Prasad, Ramiro Deo-Campo Vuong, Tianyu Wang, Eric Han, David Kempe",
+    publisher: "Technical Symposium on Computer Science Education (SIGCSE TS)",
+    date: "Feb. 2025",
+    arxiv: "https://arxiv.org/abs/2411.07705",
+    slides: "https://davidhaolong.com/slides/theory_lunch_dpvis",
+  },
+  {
+    title: "Density Descent Search for Diversity Optimization",
+    authors:
+      "<span class='font-bold'>David H. Lee</span>, Anishalakshmi V. Palaparthi, Matthew C. Fontaine, Bryon Tjanaka, Stefanos Nikolaidis",
+    publisher: "Genetic and Evolutionary Computation Conference (GECCO)",
+    date: "Jul. 2024",
+    arxiv: "https://arxiv.org/abs/2312.11331",
+    slides: "https://davidhaolong.com/slides/dds",
+  },
+  {
+    title:
+      "Training Diverse High-Dimensional Controllers by Scaling Covariance Matrix Adaptation MAP-Annealing",
+    authors:
+      "Bryon Tjanaka, Matthew C. Fontaine, <span class='font-bold'>David H. Lee</span>, Aniruddha Kalkar, Stefanos Nikolaidis",
+    publisher:
+      "IEEE Robotics and Automation Letters (RA-L), vol. 8, no. 10, pp. 6771-6778",
+    date: "Oct. 2023",
+    arxiv: "https://arxiv.org/abs/2210.02622",
+    github: "https://github.com/icaros-usc/scaling-cma-mae",
+    website: "https://scalingcmamae.github.io/",
+  },
+  {
+    title:
+      "pyribs: A Bare-Bones Python Library for Quality Diversity Optimization",
+    authors:
+      "Bryon Tjanaka, Matthew C. Fontaine, <span class='font-bold'>David H. Lee</span>, Yulun Zhang, Nivedit Reddy Balam, Nathaniel Dennler, Sujay S. Garlanka, Nikitas Dimitri Klapsis, Stefanos Nikolaidis",
+    publisher: "Genetic and Evolutionary Computation Conference (GECCO)",
+    date: "Jul. 2023",
+    arxiv: "https://arxiv.org/abs/2303.00191",
+    github: "https://github.com/icaros-usc/pyribs",
+    website: "https://pyribs.org/",
+  },
+  // {
+  //   title: "A Uniform Parcel Delivery System Based on IoT",
+  //   authors:
+  //     "Yuhui Wang, Hongbo Zhu, Zechun Wang, <span class='font-bold'>David H. Lee</span>, Guangyao Li",
+  //   publisher: "Advances in Internet of Things, vol. 8, pp. 39-63",
+  //   date: "Jan. 2018",
+  //   arxiv: "https://doi.org/10.4236/ait.2018.84004",
+  // },
+];
+
+const manuscripts = [
+  {
+    title: "Upgrading CMA-ME to CMA-MAE on the Sphere Benchmark",
+    authors:
+      "<span class='font-bold'>David H. Lee</span>, Bryon Tjanaka, Nivedit Reddy Balam, Matthew C. Fontaine, Stefanos Nikolaidis",
+    date: "Mar. 2023",
+    website: "https://docs.pyribs.org/en/stable/tutorials/cma_mae.html",
+  },
+  {
+    title:
+      "Quality Diversity Optimization: A Modular Framework and Continuous Density Estimation",
+    authors: "<span class='font-bold'>David H. Lee</span>",
+    date: "May 2024",
+    pdf: "./assets/documents/bachelors_thesis.pdf",
+    slides: "https://davidhaolong.com/slides/bachelors_thesis",
+  },
+  {
+    title:
+      "An Overview of Low-Rank Matrix Completion using Convex Optimization Techniques",
+    authors:
+      "Ramiro Deo-Campo Vuong, <span class='font-bold'>David H. Lee</span>, Aditya Prasad, Yibo Wen",
+    date: "May 2022",
+    pdf: "./assets/documents/lrmc.pdf",
+    github: "https://github.com/itsdawei/NBA-matrix-completion",
+  },
+];
+
+const teachings = [
+  {
+    title: "Introduction to Algorithms and the Theory of Computing",
+    role: "CSCI 270 @ USC, Teaching Assistant",
+    semesters: {
+      "Spring 2024": "https://bytes.usc.edu/cs270/",
+    },
+  },
+  {
+    title: "Discrete Methods in Computer Science",
+    role: "CSCI 170 @ USC, Teaching Assistant",
+    semesters: {
+      "Spring 2023": "",
+      "Summer 2023":
+        "https://viterbi-web.usc.edu/~shaddin/teaching/cs170su24/index.html",
+      "Fall 2024": "",
+    },
+  },
+];

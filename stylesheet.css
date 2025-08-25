@@ -38,10 +38,12 @@ body {
     @apply text-4xl font-bold drop-shadow-lg;
     font-family: "Montserrat", sans-serif;
   }
+
   h2 {
     @apply text-2xl font-bold mb-4 text-white;
     font-family: "Montserrat", sans-serif;
   }
+
   h3 {
     @apply text-xl font-bold;
     font-family: "Montserrat", sans-serif;

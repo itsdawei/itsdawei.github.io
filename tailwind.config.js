@@ -1,7 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: [],
-  content: ["index.html"],
+  content: ["index.html", "./*.{html,js,ts,jsx,tsx,vue,svelte}"],
   theme: {
     extend: {
       colors: {
@@ -25,7 +24,7 @@ module.exports = {
         blue: "#7aa2f7",
         purple: "#bb9af7",
         yellow: "#e0af68",
-        red: "#ff5c7c",
+        red: "#FF4040",
         green: "#a3be8c",
         orange: "#d19a6a",
       },

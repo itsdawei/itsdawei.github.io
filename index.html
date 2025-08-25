@@ -11,6 +11,9 @@
     <link rel="stylesheet" href="./output.css" />
     <!-- <link rel="stylesheet" href="stylesheet.css" /> -->
     <script type="text/javascript" src="https://livejs.com/live.js"></script>
+    <script src="data.js"></script>
+    <script src="projects.js"></script>
+    <script src="render.js"></script>
   </head>
   <body class="flex flex-col justify-start items-center w-4/5 max-w-[800px] h-full max-h-screen bg-bg my-10 overflow-y-auto">
     <main class="mb-10">
@@ -18,7 +21,7 @@
         <object class="absolute inset-0 w-full h-full -z-10 opacity-15" data="./assets/pattern.svg" type="image/svg+xml"></object>
         <img class="w-64 h-64 max-w-full rounded-full object-cover border-4 border-highlight mb-5 shadow-lg" src="./assets/profile.jpg" alt="Profile picture of David Haolong Lee" />
         <h1 class="mb-4">David Haolong Lee 李昊龙</h1>
-        <h3 class="mb-4">dhlee [at] usc [dot] edu</h3>
+        <h3 class="mb-4">Software Engineer @ Apple</h3>
         <div class="flex flex-wrap justify-around items-center gap-14">
           <a class="flex items-center text-inherit rounded-lg p-2 font-semibold" href="https://github.com/itsdawei" target="_blank" rel="noreferrer">
             <i class="fab fa-github icon"></i>GitHub
@@ -39,8 +42,6 @@
       </section>
       <section>
         <div class="flex flex-col space-y-4 py-6">
-          <!-- <p class="font-bold text-highlight">Currently applying to Ph.D. for Fall 2025!</p> -->
-          <p class="font-bold text-highlight">Seeking full-time Software Engineer or Researcher position starting Summer 2025!</p>
           <p>
             I am a master's student in computer science @
             <a class="hover:underline hover:underline-offset-4" href="https://www.usc.edu">USC</a>, where I also obtained my
@@ -67,143 +68,79 @@
         </div>
       </section>
 
-      <section>
-        <h2>Publications</h2>
-        <ul>
-          <li class="border-l-4 border-accent pl-4 mb-4 ml-4">
-            <span class="font-bold text-white">dpvis: A Visual and Interactive Learning Tool for Dynamic Programming</span>
-            <br />
-            <span class="font-bold">David H. Lee</span>, Aditya Prasad,
-            Ramiro Deo-Campo Vuong, Tianyu Wang, Eric Han, David Kempe
-            <br />
-            <span class="text-gray-500 italic">Technical Symposium on Computer Science Education (SIGCSE TS), February 2025</span>
-            <br />
-            <a class="card" href="https://arxiv.org/abs/2411.07705" target="_blank" rel="noreferrer" >
-              <i class="ai ai-arxiv icon"></i>arXiv
-            </a>
-            <a href="https://davidhaolong.com/slides/theory_lunch_dpvis" rel="noreferrer">
-              <i class="fas fa-desktop icon"></i>Slides
-            </a>
-          </li>
-          <li class="border-l-4 border-accent pl-4 mb-4 ml-4">
-            <span class="font-bold text-white">Density Descent Search for Diversity Optimization</span>
-            <br />
-            <span class="font-bold">David H. Lee</span>, Anishalakshmi V. Palaparthi, Matthew
-            C. Fontaine, Bryon Tjanaka, Stefanos Nikolaidis <br />
-            <span class="text-gray-500 italic">Genetic and Evolutionary Computation Conference (GECCO), July 2024</span>
-            <br />
-            <a class="card" href="https://arxiv.org/abs/2312.11331" target="_blank" rel="noreferrer" >
-              <i class="ai ai-arxiv icon"></i>arXiv
-            </a>
-            <a href="https://davidhaolong.com/slides/dds" rel="noreferrer">
-              <i class="fas fa-desktop icon"></i>Slides
-            </a>
-          </li>
-          <li class="border-l-4 border-accent pl-4 mb-4 ml-4">
-            <span class="font-bold text-white">Training Diverse High-Dimensional Controllers by Scaling Covariance Matrix Adaptation MAP-Annealing</span>
-            <br />
-            Bryon Tjanaka, Matthew C. Fontaine, <strong>David H. Lee</strong>,
-            Aniruddha Kalkar, Stefanos Nikolaidis <br />
-            <span class="text-gray-500 italic">IEEE Robotics and Automation Letters (RA-L), vol. 8, no. 10, pp. 6771-6778, October 2023</span>
-            <br />
-            <a href="https://arxiv.org/abs/2210.02622" target="_blank" rel="noreferrer" >
-              <i class="ai ai-arxiv icon"></i>arXiv
-            </a>
-            <a href="https://github.com/icaros-usc/scaling-cma-mae" target="_blank" rel="noreferrer" >
-              <i class="fab fa-github icon"></i>GitHub
-            </a>
-            <a href="https://scalingcmamae.github.io/" target="_blank" rel="noreferrer" >
-              <i class="fas fa-globe-americas icon"></i>Website
-            </a>
-          </li>
-          <li class="border-l-4 border-accent pl-4 mb-4 ml-4">
-            <span class="font-bold text-white">pyribs: A Bare-Bones Python Library for Quality Diversity Optimization</span >
-            <br />
-            Bryon Tjanaka, Matthew C. Fontaine, <strong>David H. Lee</strong>,
-            Yulun Zhang, Nivedit Reddy Balam, Nathaniel Dennler, Sujay S.
-            Garlanka, Nikitas Dimitri Klapsis, Stefanos Nikolaidis <br />
-            <span class="text-gray-500 italic">Genetic and Evolutionary Computation Conference (GECCO), July 2023</span>
-            <br />
-            <a href="https://arxiv.org/abs/2303.00191" target="_blank" rel="noreferrer" >
-              <i class="ai ai-arxiv icon"></i>arXiv
-            </a>
-            <a href="https://github.com/icaros-usc/pyribs" target="_blank" rel="noreferrer" >
-              <i class="fab fa-github icon"></i>GitHub
-            </a>
-            <a href="https://pyribs.org" target="_blank" rel="noreferrer">
-              <i class="fas fa-globe-americas icon"></i>Website
-            </a>
-          </li>
-          <!-- <li> -->
-          <!--   <span class="pub-title">A Uniform Parcel Delivery System Based on IoT</span> <br> -->
-          <!--   Yuhui Wang, Hongbo Zhu, Zechun Wang, <span>David H. Lee</span>, Guangyao Li <br> -->
-          <!--   <em>Advances in Internet of Things</em>, vol. 8, pp. 39-63, January 2018. <br> -->
-          <!--   <a href="https://doi.org/10.4236/ait.2018.84004" target="_blank" rel="noreferrer">[doi]</a> -->
-          <!-- </li> -->
-        </ul>
+  <h2>Softwares</h2>
+  <div id="project-grid"></div>
+  <script>
+    renderSoftwares("project-grid", projects);
+  </script>
 
-        <h2>Manuscripts</h2>
-        <ul>
-          <li class="border-l-4 border-accent pl-4 mb-4 ml-4">
-            <span class="font-bold text-white">Upgrading CMA-ME to CMA-MAE on the Sphere Benchmark</span>
-            <br />
-            <span class="font-bold">David H. Lee</span>, Bryon Tjanaka, Nivedit Reddy Balam,
-            Matthew C. Fontaine, Stefanos Nikolaidis <br />
-            <!-- 2023. <br> -->
-            <a href="https://docs.pyribs.org/en/stable/tutorials/cma_mae.html" target="_blank" rel="noreferrer">
-              <i class="fas fa-earth-americas icon"></i>Website
-            </a>
-          </li>
-          <li class="border-l-4 border-accent pl-4 mb-4 ml-4">
-            <span class="font-bold text-white">Quality Diversity Optimization: A Modular Framework and Continuous Density Estimation</span>
-            <br />
-            <!-- <span class="font-bold">David H. Lee</span> <br /> -->
-            Bachelor's Thesis <br />
-            <a href="./assets/documents/bachelors_thesis.pdf" target="_blank" rel="noreferrer">
-              <i class="far fa-file-pdf icon"></i>PDF
-            </a>
-            <a href="https://davidhaolong.com/slides/bachelors_thesis" rel="noreferrer">
-              <i class="fas fa-desktop icon"></i>Slides
-            </a>
-          </li>
-          <li class="border-l-4 border-accent pl-4 mb-4 ml-4">
-            <span class="font-bold text-white">An Overview of Low-Rank Matrix Completion using Convex Optimization Techniques</span>
-            <br />
-            Ramiro Deo-Campo Vuong, <span class="font-bold">David H. Lee</span>,
-            Aditya Prasad, Yibo Wen <br />
-            <!-- May 13, 2022. -->
-            <a href="./assets/documents/lrmc.pdf" target="_blank" rel="noreferrer" >
-              <i class="fa-regular fa-file-pdf icon"></i>PDF
-            </a>
-            <a href="https://github.com/itsdawei/NBA-matrix-completion" target="_blank" rel="noreferrer" >
-              <i class="fab fa-github icon"></i>GitHub
-            </a>
-          </li>
-        </ul>
-      </section>
+      <!-- <section> -->
+      <!--   <h2>Software</h2> -->
+      <!--   <div class="grid grid-cols-1 md:grid-cols-2 gap-6"> -->
+          <!-- Project: dpvis -->
+      <!--     <div class="border-l-4 border-accent pl-4 mb-4 ml-4"> -->
+      <!--       <span class="font-bold text-white">dpvis</span> -->
+      <!--       <br /> -->
+      <!--       Open-source Python library for interactive visualizations of dynamic programming algorithms. -->
+      <!--       Includes auto-generated self-checks and an event-driven architecture built with Plotly Dash. -->
+      <!--       <ul class="text-sm text-gray-400 mb-2"> -->
+      <!--         <li>🛠️ Python, Plotly Dash, GitHub Actions, mkdocs</li> -->
+      <!--         <li>👥 Team lead; used in university instruction</li> -->
+      <!--       </ul> -->
+      <!--       <div class="flex flex-wrap gap-4"> -->
+      <!--         <a href="https://dpvis.readthedocs.io/en/latest/" class="text-blue-400 hover:text-white" target="_blank">📄 Docs</a> -->
+      <!--         <a href="https://arxiv.org/abs/2411.07705" class="text-blue-400 hover:text-white" target="_blank">📚 Paper</a> -->
+      <!--         <a href="https://davidhaolong.com/slides/theory_lunch_dpvis" class="text-blue-400 hover:text-white" target="_blank">🎤 Slides</a> -->
+      <!--       </div> -->
+      <!--     </div> -->
 
-      <section class="teaching">
-        <h2>Teaching</h2>
-        <ul>
-          <li class="border-l-4 border-accent pl-4 mb-4 ml-4">
-            <span class="font-bold">Introduction to Algorithms and the Theory of Computing</span>
-            <br />
-            CSCI 270 @ USC, Teaching Assistant <br />
-            <em>
-              <a href="https://bytes.usc.edu/cs270/" target="_blank" rel="noreferrer" >Spring 2024</a>
-            </em>
-          </li>
-          <li class="border-l-4 border-accent pl-4 mb-4 ml-4">
-            <span class="font-bold">Discrete Methods in Computer Science</span><br />
-            CSCI 170 @ USC, Teaching Assistant <br />
-            <em>
-              Spring 2023,
-              <a href="https://viterbi-web.usc.edu/~shaddin/teaching/cs170su24/index.html" target="_blank" rel="noreferrer" >Summer 2023</a >,
-              Fall 2024
-            </em>
-          </li>
-        </ul>
-      </section>
+          <!-- Project: pyribs -->
+      <!--     <div class="border-l-4 border-accent pl-4 mb-4 ml-4"> -->
+      <!--       <span class="font-bold text-white">pyribs</span> -->
+      <!--       <p class="text-secondary mb-2"> -->
+      <!--         Modular QD optimization library, maintained with ICAROS Lab. Extended with gradient-based optimizers and modern adaptation techniques. -->
+      <!--       </p> -->
+      <!--       <ul class="text-sm text-gray-400 mb-2"> -->
+      <!--         <li>🛠️ Python, JAX, PyTorch, GitHub</li> -->
+      <!--         <li>⭐ 200+ GitHub stars, 2x eval speedup</li> -->
+      <!--       </ul> -->
+      <!--       <div class="flex flex-wrap gap-4"> -->
+      <!--         <a href="https://pyribs.org" class="text-blue-400 hover:text-white" target="_blank">🌐 Website</a> -->
+      <!--         <a href="https://github.com/icaros-usc/pyribs" class="text-blue-400 hover:text-white" target="_blank">💻 GitHub</a> -->
+      <!--         <a href="https://arxiv.org/abs/2303.00191" class="text-blue-400 hover:text-white" target="_blank">📚 Paper</a> -->
+      <!--       </div> -->
+      <!--     </div> -->
+
+          <!-- Project: DoorDrink -->
+      <!--     <div class="bg-surface p-4 rounded-lg shadow hover:shadow-lg transition"> -->
+      <!--       <h3 class="text-white text-xl font-bold mb-2">DoorDrink</h3> -->
+      <!--       <p class="text-secondary mb-2"> -->
+      <!--         Android app for local coffee shop discovery and real-time mobile ordering with Firebase backend and routing APIs. -->
+      <!--       </p> -->
+      <!--       <ul class="text-sm text-gray-400 mb-2"> -->
+      <!--         <li>🛠️ Java, Firebase, Google Maps API</li> -->
+      <!--         <li>🧪 Espresso, Jetpack Compose, JUnit</li> -->
+      <!--       </ul> -->
+      <!--     </div> -->
+      <!--   </div> -->
+
+      <h2>Publications</h2>
+      <ul id="publication-list"></ul>
+      <script>
+        renderPublications("publication-list", publications);
+      </script>
+
+      <h2>Manuscripts</h2>
+      <ul id="manuscript-list"></ul>
+      <script>
+        renderManuscripts("manuscript-list", manuscripts);
+      </script>
+
+      <h2>Teachings</h2>
+      <ul id="teaching-list"></ul>
+      <script>
+        renderTeaching("teaching-list", teachings);
+      </script>
 
       <!-- <section id="awards"> -->
       <!--   <h2>Awards</h2> -->
@@ -222,51 +159,12 @@
       <!-- </section> -->
 
       <section class="presentations">
-        <h2>Presentations</h2>
-        <ul>
-          <li class="border-l-4 border-accent pl-4 mb-4 ml-4">
-            <a class="block p-4 bg-gray-800 hover:bg-gray-700 rounded-lg transition-colors duration-200" href="https://davidhaolong.com/slides/theory_lunch_dpvis">
-              <div class="flex items-start justify-between">
-                <div>
-                  <h3 class="text-lg font-bold text-white">dpvis: A Visual and Interactive Learning Tool for Dynamic Programming</h3>
-                  <p class="text-sm text-gray-400 italic">Theory Lunch @ USC Theory Group</p>
-                </div>
-                <span class="text-sm text-gray-400 mt-1 ml-8 pl-8 whitespace-nowrap">Oct. 2024</span>
-              </div>
-            </a>
-          </li>
-          <li class="border-l-4 border-accent pl-4 mb-4 ml-4">
-            <a class="block p-4 bg-gray-800 hover:bg-gray-700 rounded-lg transition-colors duration-200" href="https://davidhaolong.com/slides/dds">
-              <div class="flex items-start justify-between">
-                <div>
-                  <h3 class="text-lg font-bold text-white">
-                    Density Descent Search for Diversity Optimization
-                  </h3>
-                  <p class="text-sm text-gray-400 italic">
-                    Genetic and Evolutionary Computation Conference (GECCO) @ Melbourne, Australia
-                  </p>
-                </div>
-                <span class="text-sm text-gray-400 mt-1 ml-8 pl-8 whitespace-nowrap">Jul. 2024</span>
-              </div>
-            </a>
-          </li>
-          <li class="border-l-4 border-accent pl-4 mb-4 ml-4">
-            <a class="block p-4 bg-gray-800 hover:bg-gray-700 rounded-lg transition-colors duration-200" href="https://davidhaolong.com/slides/bachelors_thesis">
-              <div class="flex items-start justify-between">
-                <div>
-                  <h3 class="text-lg font-bold text-white">
-                    Quality Diversity Optimization: A Modular Framework and Continuous Density Estimation
-                  </h3>
-                  <p class="text-sm text-gray-400 italic">
-                    Bachelor's Thesis for W.V.T. Rusch Undergraduate Engineering Honors
-                  </p>
-                </div>
-                <span class="text-sm text-gray-400 mt-1 ml-8 pl-8 whitespace-nowrap">May 2024</span>
-              </div>
-            </a>
-          </li>
-        </ul>
+        <h2>Presentations</h3>
+        <ul id="presentation-list"></ul>
       </section>
+      <script>
+        renderPresentations("presentation-list", presentations);
+      </script>
 
       <section>
         <h2>Other</h2>
