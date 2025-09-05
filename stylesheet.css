@@ -81,14 +81,8 @@ body {
   text-align: center;
   color: var(--text-primary);
 
-  a:hover {
-    color: var(--text-primary);
-    background: var(--text-secondary);
-  }
-
   .icon {
     margin-left: 0;
-    margin-right: 16px;
     font-size: 32px;
   }
 }

@@ -4,12 +4,9 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>David Haolong Lee's Personal Page</title>
-    <!-- <link rel="icon" type="image/png" href="./images/favicon/mallard.png"> -->
-    <!-- <link rel="alternate icon" href="./images/favicon/mallard.ico"> -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css" />
     <link rel="stylesheet" href="./output.css" />
-    <!-- <link rel="stylesheet" href="stylesheet.css" /> -->
     <script type="text/javascript" src="https://livejs.com/live.js"></script>
     <script src="data.js"></script>
     <script src="render.js"></script>
@@ -18,45 +15,50 @@
     <main class="mb-10">
       <section class="profile">
         <object class="absolute inset-0 w-full h-full -z-10 opacity-15" data="./assets/pattern.svg" type="image/svg+xml"></object>
-        <img class="w-64 h-64 max-w-full rounded-full object-cover border-4 border-highlight mb-5 shadow-lg" src="./assets/profile.jpg" alt="Profile picture of David Haolong Lee" />
-        <h1 class="mb-4">David Haolong Lee 李昊龙</h1>
-        <h3 class="mb-4">Software Engineer @ Apple</h3>
-        <div class="flex flex-wrap justify-around items-center gap-14">
-          <a class="flex items-center text-inherit rounded-lg p-2 font-semibold" href="https://github.com/itsdawei" target="_blank" rel="noreferrer">
-            <i class="fab fa-github icon"></i>GitHub
-          </a>
-          <a class="flex items-center text-inherit rounded-lg p-2 font-semibold" href="https://scholar.google.com/citations?user=Y7Dr1bQAAAAJ&hl=en&oi=sra" target="_blank" rel="noreferrer">
-            <i class="ai ai-google-scholar-square icon"></i>Google Scholar
-          </a>
-          <a class="flex items-center text-inherit rounded-lg p-2 font-semibold" href="https://www.linkedin.com/in/lee-david-haolong/" target="_blank" rel="noreferrer">
-            <i class="fab fa-linkedin icon"></i>LinkedIn
-          </a>
-          <a class="flex items-center text-inherit rounded-lg p-2 font-semibold" href="./assets/documents/david_haolong_lee_resume.pdf" target="_blank" rel="noreferrer">
-            <i class="fas fa-file-alt icon"></i>Resume
-          </a>
-          <a class="flex items-center text-inherit rounded-lg p-2 font-semibold" href="./assets/documents/david_haolong_lee_cv.pdf" target="_blank" rel="noreferrer">
-            <i class="fas fa-file-alt icon"></i>CV
-          </a>
+        <div class="flex items-center gap-6">
+          <img class="w-52 h-52 max-w-full rounded-full object-cover border-4 border-highlight mb-5 shadow-lg" src="./assets/profile.jpg" alt="Profile picture of David Haolong Lee" />
+          <div class="flex flex-col items-start">
+            <h2 class="mb-4 font-bold">David Haolong Lee 李昊龙</h2>
+            <h3 class="mb-4">Software Engineer @ <i class="text-2xl fa-brands fa-apple"></i></h3>
+            <div class="flex flex-wrap justify-around items-center">
+              <a class="flex items-center text-inherit rounded-lg p-2 font-semibold" href="https://github.com/itsdawei" target="_blank" rel="noreferrer">
+                <i class="fab fa-github icon"></i>
+              </a>
+              <a class="flex items-center text-inherit rounded-lg p-2 font-semibold" href="https://scholar.google.com/citations?user=Y7Dr1bQAAAAJ&hl=en&oi=sra" target="_blank" rel="noreferrer">
+                <i class="ai ai-google-scholar-square icon"></i>
+              </a>
+              <a class="flex items-center text-inherit rounded-lg p-2 font-semibold" href="https://www.linkedin.com/in/lee-david-haolong/" target="_blank" rel="noreferrer">
+                <i class="fab fa-linkedin icon"></i>
+              </a>
+              <a class="flex items-center text-inherit rounded-lg p-2 font-semibold" href="./assets/documents/david_haolong_lee_resume.pdf" target="_blank" rel="noreferrer">
+                <i class="fas fa-briefcase icon"></i>
+              </a>
+              <a class="flex items-center text-inherit rounded-lg p-2 font-semibold" href="./assets/documents/david_haolong_lee_cv.pdf" target="_blank" rel="noreferrer">
+                <i class="fas fa-user-graduate icon"></i>
+              </a>
+            </div>
+          </div>
         </div>
       </section>
       <section>
         <div class="flex flex-col space-y-4 py-6">
           <p>
-            I am a master's student in computer science @
-            <a class="hover:underline hover:underline-offset-4" href="https://www.usc.edu">USC</a>, where I also obtained my
-            bachelor's degree in computer science with
-            <a class="hover:underline hover:underline-offset-4" href="https://viterbiundergrad.usc.edu/ehp">honors</a>.
-            I am a member of the
+            I'm currently working as a software engineer at <i class="fa-brands fa-apple"></i>.
+            I obtained my bachelor's (with <a class="hover:underline hover:underline-offset-4" href="https://viterbiundergrad.usc.edu/ehp">honors</a>) and master's degree in computer science from
+            <a class="hover:underline hover:underline-offset-4" href="https://www.usc.edu">USC</a>.
+            During my studies, I was a member of the
             <a class="hover:underline hover:underline-offset-4" href="https://icaros.usc.edu">ICAROS lab</a> @ USC and the
             <a class="hover:underline hover:underline-offset-4" href="https://viterbi-web.usc.edu/~cstheory">USC Theory Group</a>.
-            I am fortunate to be advised by the wonderful
+            I am fortunate to be have the oppotunity to work closely with and learn from
             <a class="hover:underline hover:underline-offset-4" href="https://stefanosnikolaidis.net">Stefanos Nikolaidis</a>
-            and to have worked closely with
-            <a class="hover:underline hover:underline-offset-4" href="https://www.david-kempe.com">David Kempe</a> and
-            <a class="hover:underline hover:underline-offset-4" href="https://viterbi-web.usc.edu/~shaddin">Shaddin Dughmi</a>.
-            I am also extremely thankful for my mentors and close collaborators
-            <a class="hover:underline hover:underline-offset-4" href="https://btjanaka.net">Bryon Tjanaka</a> and
-            <a class="hover:underline hover:underline-offset-4" href="https://www.linkedin.com/in/matthew-fontaine-53510b122/">Matthew Fontaine</a>.
+            and
+            <a class="hover:underline hover:underline-offset-4" href="https://www.david-kempe.com">David Kempe</a>.
+            I am also extremely thankful for my close friends and collaborators
+            <a class="hover:underline hover:underline-offset-4" href="https://aditya-prasad.com">Aditya Prasad</a>,
+            <a class="hover:underline hover:underline-offset-4" href="https://ramirodcv.github.io/">Ramiro Deo-Campo Vuong</a>,
+            <a class="hover:underline hover:underline-offset-4" href="https://yjennykim.github.io/">Jenny Kim</a>,
+            <a class="hover:underline hover:underline-offset-4" href="https://btjanaka.net">Bryon Tjanaka</a>, and
+            <a class="hover:underline hover:underline-offset-4" href="https://tehqin.github.io/">Matthew Fontaine</a>.
           </p>
           <p>
             My research interests are continuous optimization, interpretability
@@ -66,6 +68,26 @@
           </p>
         </div>
       </section>
+
+  <!-- <h2>News</h2> -->
+  <!-- <div class="news max-h-20 overflow-y-auto pr-2 mb-10"> -->
+  <!--   <ul class="space-y-2 text-secondary"> -->
+  <!--     <li class="flex gap-4"> -->
+  <!--       <span class="w-28 shrink-0 font-semibold whitespace-nowrap">Sep. 2025</span> -->
+  <!--       <span>Submitted my PhD applications 🎓</span> -->
+  <!--     </li> -->
+  <!--     <li class="flex gap-4"> -->
+  <!--       <span class="w-28 shrink-0 font-semibold whitespace-nowrap">Jul. 2025</span> -->
+  <!--       <span>Our paper on <em>dpvis</em> was accepted to -->
+  <!--         <a href="https://arxiv.org/abs/2411.07705" class="hover:underline">ArXiv</a>. -->
+  <!--       </span> -->
+  <!--     </li> -->
+  <!--     <li class="flex gap-4"> -->
+  <!--       <span class="w-28 shrink-0 font-semibold whitespace-nowrap">May 2025</span> -->
+  <!--       <span>Presented at the USC Theory Lunch on dynamic programming visualization.</span> -->
+  <!--     </li> -->
+  <!--   </ul> -->
+  <!-- </div> -->
 
   <h2>Softwares</h2>
   <div id="project-grid"></div>
