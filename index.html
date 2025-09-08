@@ -48,8 +48,8 @@
             <a class="hover:underline hover:underline-offset-4" href="https://www.usc.edu">USC</a>.
             During my studies, I was a member of the
             <a class="hover:underline hover:underline-offset-4" href="https://icaros.usc.edu">ICAROS lab</a> @ USC and the
-            <a class="hover:underline hover:underline-offset-4" href="https://viterbi-web.usc.edu/~cstheory">USC Theory Group</a>.
-            I am fortunate to be have the oppotunity to work closely with and learn from
+            <a class="hover:underline hover:underline-offset-4" href="https://viterbi-web.usc.edu/~cstheory">USC CS Theory Group</a>.
+            I am fortunate to be have the opportunity to work closely with and learn from
             <a class="hover:underline hover:underline-offset-4" href="https://stefanosnikolaidis.net">Stefanos Nikolaidis</a>
             and
             <a class="hover:underline hover:underline-offset-4" href="https://www.david-kempe.com">David Kempe</a>.
@@ -69,25 +69,11 @@
         </div>
       </section>
 
-  <!-- <h2>News</h2> -->
-  <!-- <div class="news max-h-20 overflow-y-auto pr-2 mb-10"> -->
-  <!--   <ul class="space-y-2 text-secondary"> -->
-  <!--     <li class="flex gap-4"> -->
-  <!--       <span class="w-28 shrink-0 font-semibold whitespace-nowrap">Sep. 2025</span> -->
-  <!--       <span>Submitted my PhD applications 🎓</span> -->
-  <!--     </li> -->
-  <!--     <li class="flex gap-4"> -->
-  <!--       <span class="w-28 shrink-0 font-semibold whitespace-nowrap">Jul. 2025</span> -->
-  <!--       <span>Our paper on <em>dpvis</em> was accepted to -->
-  <!--         <a href="https://arxiv.org/abs/2411.07705" class="hover:underline">ArXiv</a>. -->
-  <!--       </span> -->
-  <!--     </li> -->
-  <!--     <li class="flex gap-4"> -->
-  <!--       <span class="w-28 shrink-0 font-semibold whitespace-nowrap">May 2025</span> -->
-  <!--       <span>Presented at the USC Theory Lunch on dynamic programming visualization.</span> -->
-  <!--     </li> -->
-  <!--   </ul> -->
-  <!-- </div> -->
+      <h2>News</h2>
+      <div id = "news-list" class="max-h-64 overflow-y-auto pr-2 mb-10"></div>
+      <script>
+        renderNews("news-list", news);
+      </script>
 
       <h2>Softwares</h2>
       <div id="project-grid"></div>
@@ -113,29 +99,13 @@
         renderTeaching("teaching-list", teachings);
       </script>
 
-      <!-- <section id="awards"> -->
-      <!--   <h2>Awards</h2> -->
-      <!--   <ul> -->
-      <!--     <li class="course"> -->
-      <!--       <span class="course-title">Introduction to Algorithms and the Theory of Computing</span> <br> -->
-      <!--       CSCI 270 @ USC, Teaching Assistant <br> -->
-      <!--       <em><a href="https://bytes.usc.edu/cs270/" target="_blank" rel="noreferrer">Spring 2024</a></em> -->
-      <!--     </li> -->
-      <!--     <li class="course"> -->
-      <!--       <span class="course-title">Discrete Methods in Computer Science</span><br> -->
-      <!--       CSCI 170 @ USC, Teaching Assistant <br> -->
-      <!--       <em>Spring 2023, <a href="https://viterbi-web.usc.edu/~shaddin/teaching/cs170su24/index.html" target="_blank" rel="noreferrer">Summer 2023</a>, Fall 2024</em> -->
-      <!--     </li> -->
-      <!--   </ul> -->
+      <!-- <section class="presentations"> -->
+      <!--   <h2>Presentations</h3> -->
+      <!--   <ul id="presentation-list"></ul> -->
       <!-- </section> -->
-
-      <section class="presentations">
-        <h2>Presentations</h3>
-        <ul id="presentation-list"></ul>
-      </section>
-      <script>
-        renderPresentations("presentation-list", presentations);
-      </script>
+      <!-- <script> -->
+      <!--   renderPresentations("presentation-list", presentations); -->
+      <!-- </script> -->
 
       <section>
         <h2>Other</h2>

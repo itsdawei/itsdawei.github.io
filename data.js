@@ -1,3 +1,45 @@
+const news = [
+  {
+    date: "Aug 18th",
+    icon: "fa-brands fa-apple",
+    title: "Started working as a software engineer at Apple in the simulation team",
+  },
+  {
+    date: "May 16th",
+    title: "Graduated from University of Southern California with my master's in computer science",
+  },
+  {
+    date: "Feb 28th",
+    icon: "fa-solid fa-chalkboard",
+    title: `My co-author Aditya presented <a class="italic" href="" target="_blank" rel="noreferrer">dpvis: A Visual and Interactive Learning Tool for Dynamic Programming</a> at <a href="https://sigcse2025.sigcse.org" target="_blank" rel="noreferrer">SIGCSE 2025</a> in Pittsburg, Pennsylvania`,
+  },
+  {
+    date: "2024",
+  },
+  {
+    date: "Oct 31st",
+    icon: "fa-solid fa-chalkboard",
+    title: `Presented <a class="italic" href="https://davidhaolong.com/slides/theory_lunch_dpvis" target="_blank" rel="noreferrer">dpvis: A Visual and Interactive Learning Tool for Dynamic Programming</a> at <a href="https://viterbi-web.usc.edu/~cstheory/theory-lunch.html" target="_blank" rel="noreferrer">USC Theory Lunch</a>`,
+  },
+  {
+    date: "Jul 16th",
+    icon: "fa-solid fa-chalkboard",
+    title: `Presented <a class="italic" href="https://davidhaolong.com/slides/dds" target="_blank" rel="noreferrer">Density Descent Search for Diversity Optimization</a> at <a href="https://gecco-2024.sigevo.org" target="_blank" rel="noreferrer">GECCO 2024</a> in Melbourne, Australia`,
+  },
+  {
+    date: "Apr 25th",
+    icon: "fa-solid fa-chalkboard",
+    title: `Presented my bachelor's honors thesis <a class="italic" href="https://davidhaolong.com/slides/bachelors_thesis" target="_blank" rel="noreferrer">Quality Diversity Optimization: A Modular Framework and Continuous Density Estimation</a>`,
+  },
+  {
+    date: "2023",
+  },
+  {
+    date: "Dec 6th",
+    icon: "fa-solid fa-screwdriver-wrench",
+    title: `Released <a class="italic" href="https://dpvis.readthedocs.io/en/latest" target="_blank" rel="noreferrer">dpvis</a>, a simple Python library for interactive visualizations of dynamic programming algorithms`,
+  },
+]
 const projects = [
   {
     title: "dpvis",
@@ -13,7 +55,7 @@ const projects = [
   },
   {
     title: "pyribs",
-    description: "Modular QD optimization library maintained with ICAROS Lab. Extended with gradient-based optimizers and modern adaptation techniques.",
+    description: "A bare-bones Python library for quality diversity (QD) optimization. Pyribs implements the highly modular Rapid Illumination of Behavior Space (RIBS) framework for QD optimization.",
     tech: ["Python", "JAX", "PyTorch", "GitHub"],
     role: "Maintainer, contributed to GECCO 2023 paper",
     links: [
@@ -111,19 +153,19 @@ const publications = [
 
 const manuscripts = [
   {
-    title: "Upgrading CMA-ME to CMA-MAE on the Sphere Benchmark",
-    authors:
-      "<span class='font-bold'>David H. Lee</span>, Bryon Tjanaka, Nivedit Reddy Balam, Matthew C. Fontaine, Stefanos Nikolaidis",
-    date: "Mar. 2023",
-    website: "https://docs.pyribs.org/en/stable/tutorials/cma_mae.html",
-  },
-  {
     title:
       "Quality Diversity Optimization: A Modular Framework and Continuous Density Estimation",
     authors: "<span class='font-bold'>David H. Lee</span>",
     date: "May 2024",
     pdf: "./assets/documents/bachelors_thesis.pdf",
     slides: "https://davidhaolong.com/slides/bachelors_thesis",
+  },
+  {
+    title: "Upgrading CMA-ME to CMA-MAE on the Sphere Benchmark",
+    authors:
+      "<span class='font-bold'>David H. Lee</span>, Bryon Tjanaka, Nivedit Reddy Balam, Matthew C. Fontaine, Stefanos Nikolaidis",
+    date: "Mar. 2023",
+    website: "https://docs.pyribs.org/en/stable/tutorials/cma_mae.html",
   },
   {
     title:
@@ -149,8 +191,7 @@ const teachings = [
     role: "CSCI 170 @ USC, Teaching Assistant",
     semesters: {
       "Spring 2023": "",
-      "Summer 2023":
-        "https://viterbi-web.usc.edu/~shaddin/teaching/cs170su24/index.html",
+      "Summer 2023": "",
       "Fall 2024": "",
     },
   },

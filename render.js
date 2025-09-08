@@ -185,3 +185,39 @@ function renderPresentations(containerId, list) {
     container.appendChild(wrapper);
   });
 }
+
+function renderNews(containerId, list) {
+  const container = document.getElementById(containerId);
+  const ul = document.createElement("ul");
+  ul.className = "space-y-2";
+
+  list.forEach((item) => {
+    icon = item.icon ?? "fa-solid fa-graduation-cap";
+    const li = document.createElement("li");
+    li.className = "flex";
+    li.innerHTML = `
+        <div class="basis-24 flex-none flex justify-center">
+          <span class="inline-flex px-3 py-1 rounded-full bg-surface text-xs font-bold self-start">
+            ${item.date}
+          </span>
+        </div>
+    `;
+    if (item.title) {
+      li.innerHTML += `
+        <div class="flex min-w-0 items-baseline">
+          <i class='${icon} fa-fw mr-2 shrink-0'></i>
+          <span class="whitespace-normal break-words text-sm">${item.title}</span>
+        </div>
+      `;
+    } else {
+      li.className = "flex items-center";
+      li.innerHTML += `
+        <div class="flex-1 border-b border-gray-300"></div>
+      `;
+    }
+
+    ul.appendChild(li);
+  });
+
+  container.appendChild(ul);
+}
