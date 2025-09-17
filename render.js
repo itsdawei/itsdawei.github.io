@@ -149,7 +149,7 @@ function renderTeaching(containerId, list) {
         <span class="font-bold text-white">${item.title}</span>
         <p class="text-sm text-gray-400 italic">${item.role}</p>
       </div>
-      <span class="text-sm text-gray-400 mt-1 ml-8 pl-8 whitespace-nowrap">${semesters}</span>
+      <span class="text-sm text-gray-400 mt-1 ml-8 pl-8">${semesters}</span>
     </div>
     `;
 

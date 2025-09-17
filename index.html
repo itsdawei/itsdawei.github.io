@@ -11,7 +11,7 @@
     <script src="data.js"></script>
     <script src="render.js"></script>
   </head>
-  <body class="flex flex-col justify-start items-center w-4/5 max-w-[800px] h-full max-h-screen bg-bg my-10 overflow-y-auto">
+  <body class="flex flex-col justify-start items-center h-full max-h-screen bg-bg my-10 overflow-y-auto">
     <main class="mb-10">
       <section class="profile">
         <object class="absolute inset-0 w-full h-full -z-10 opacity-15" data="./assets/pattern.svg" type="image/svg+xml"></object>
@@ -40,81 +40,83 @@
           </div>
         </div>
       </section>
-      <section>
-        <div class="flex flex-col space-y-4 py-6">
+      <div id="container">
+        <section>
+          <div class="flex flex-col space-y-4 py-6">
+            <p>
+              I'm currently working as a software engineer at <i class="fa-brands fa-apple"></i>.
+              I obtained my bachelor's (with <a class="hover:underline hover:underline-offset-4" href="https://viterbiundergrad.usc.edu/ehp">honors</a>) and master's degree in computer science from
+              <a class="hover:underline hover:underline-offset-4" href="https://www.usc.edu">USC</a>.
+              During my studies, I was a member of the
+              <a class="hover:underline hover:underline-offset-4" href="https://icaros.usc.edu">ICAROS lab</a> @ USC and the
+              <a class="hover:underline hover:underline-offset-4" href="https://viterbi-web.usc.edu/~cstheory">USC CS Theory Group</a>.
+              I am fortunate to be have the opportunity to work closely with and learn from
+              <a class="hover:underline hover:underline-offset-4" href="https://stefanosnikolaidis.net">Stefanos Nikolaidis</a>
+              and
+              <a class="hover:underline hover:underline-offset-4" href="https://www.david-kempe.com">David Kempe</a>.
+              I am also extremely thankful for my close friends and collaborators
+              <a class="hover:underline hover:underline-offset-4" href="https://aditya-prasad.com">Aditya Prasad</a>,
+              <a class="hover:underline hover:underline-offset-4" href="https://ramirodcv.github.io/">Ramiro Deo-Campo Vuong</a>,
+              <a class="hover:underline hover:underline-offset-4" href="https://yjennykim.github.io/">Jenny Kim</a>,
+              <a class="hover:underline hover:underline-offset-4" href="https://btjanaka.net">Bryon Tjanaka</a>, and
+              <a class="hover:underline hover:underline-offset-4" href="https://tehqin.github.io/">Matthew Fontaine</a>.
+            </p>
+            <p>
+              My research interests are continuous optimization, interpretability
+              in machine learning, robust and adaptive agents, and quality
+              diversity optimization. I am excited about deriving practically
+              useful algorithms from theoretical computer science.
+            </p>
+          </div>
+        </section>
+
+        <h2>News</h2>
+        <div id = "news-list" class="max-h-64 overflow-y-auto pr-2 mb-10"></div>
+        <script>
+          renderNews("news-list", news);
+        </script>
+
+        <h2>Softwares</h2>
+        <div id="project-grid"></div>
+        <script>
+          renderSoftwares("project-grid", projects);
+        </script>
+
+        <h2>Publications</h2>
+        <ul id="publication-list"></ul>
+        <script>
+          renderPublications("publication-list", publications);
+        </script>
+
+        <h2>Manuscripts</h2>
+        <ul id="manuscript-list"></ul>
+        <script>
+          renderManuscripts("manuscript-list", manuscripts);
+        </script>
+
+        <h2>Teachings</h2>
+        <ul id="teaching-list"></ul>
+        <script>
+          renderTeaching("teaching-list", teachings);
+        </script>
+
+        <!-- <section class="presentations"> -->
+        <!--   <h2>Presentations</h3> -->
+        <!--   <ul id="presentation-list"></ul> -->
+        <!-- </section> -->
+        <!-- <script> -->
+        <!--   renderPresentations("presentation-list", presentations); -->
+        <!-- </script> -->
+
+        <section>
+          <h2>Other</h2>
           <p>
-            I'm currently working as a software engineer at <i class="fa-brands fa-apple"></i>.
-            I obtained my bachelor's (with <a class="hover:underline hover:underline-offset-4" href="https://viterbiundergrad.usc.edu/ehp">honors</a>) and master's degree in computer science from
-            <a class="hover:underline hover:underline-offset-4" href="https://www.usc.edu">USC</a>.
-            During my studies, I was a member of the
-            <a class="hover:underline hover:underline-offset-4" href="https://icaros.usc.edu">ICAROS lab</a> @ USC and the
-            <a class="hover:underline hover:underline-offset-4" href="https://viterbi-web.usc.edu/~cstheory">USC CS Theory Group</a>.
-            I am fortunate to be have the opportunity to work closely with and learn from
-            <a class="hover:underline hover:underline-offset-4" href="https://stefanosnikolaidis.net">Stefanos Nikolaidis</a>
-            and
-            <a class="hover:underline hover:underline-offset-4" href="https://www.david-kempe.com">David Kempe</a>.
-            I am also extremely thankful for my close friends and collaborators
-            <a class="hover:underline hover:underline-offset-4" href="https://aditya-prasad.com">Aditya Prasad</a>,
-            <a class="hover:underline hover:underline-offset-4" href="https://ramirodcv.github.io/">Ramiro Deo-Campo Vuong</a>,
-            <a class="hover:underline hover:underline-offset-4" href="https://yjennykim.github.io/">Jenny Kim</a>,
-            <a class="hover:underline hover:underline-offset-4" href="https://btjanaka.net">Bryon Tjanaka</a>, and
-            <a class="hover:underline hover:underline-offset-4" href="https://tehqin.github.io/">Matthew Fontaine</a>.
+            I spend most of my free time playing volleyball (indoor and beach).
+            I also enjoy cooking (my go-to choices are mostly chinese cuisine).
+            <!-- Vim and inkscape and using linux -->
           </p>
-          <p>
-            My research interests are continuous optimization, interpretability
-            in machine learning, robust and adaptive agents, and quality
-            diversity optimization. I am excited about deriving practically
-            useful algorithms from theoretical computer science.
-          </p>
-        </div>
-      </section>
-
-      <h2>News</h2>
-      <div id = "news-list" class="max-h-64 overflow-y-auto pr-2 mb-10"></div>
-      <script>
-        renderNews("news-list", news);
-      </script>
-
-      <h2>Softwares</h2>
-      <div id="project-grid"></div>
-      <script>
-        renderSoftwares("project-grid", projects);
-      </script>
-
-      <h2>Publications</h2>
-      <ul id="publication-list"></ul>
-      <script>
-        renderPublications("publication-list", publications);
-      </script>
-
-      <h2>Manuscripts</h2>
-      <ul id="manuscript-list"></ul>
-      <script>
-        renderManuscripts("manuscript-list", manuscripts);
-      </script>
-
-      <h2>Teachings</h2>
-      <ul id="teaching-list"></ul>
-      <script>
-        renderTeaching("teaching-list", teachings);
-      </script>
-
-      <!-- <section class="presentations"> -->
-      <!--   <h2>Presentations</h3> -->
-      <!--   <ul id="presentation-list"></ul> -->
-      <!-- </section> -->
-      <!-- <script> -->
-      <!--   renderPresentations("presentation-list", presentations); -->
-      <!-- </script> -->
-
-      <section>
-        <h2>Other</h2>
-        <p>
-          I spend most of my free time playing volleyball (indoor and beach).
-          I also enjoy cooking (my go-to choices are mostly chinese cuisine).
-          <!-- Vim and inkscape and using linux -->
-        </p>
-      </section>
+        </section>
+      </div>
     </main>
     <footer><p>&copy; 2024 David Haolong Lee. All rights reserved.</p></footer>
   </body>
