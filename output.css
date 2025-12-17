@@ -249,9 +249,6 @@
   .min-h-full {
     min-height: 100%;
   }
-  .w-2\/3 {
-    width: calc(2/3 * 100%);
-  }
   .w-52 {
     width: calc(var(--spacing) * 52);
   }
@@ -409,7 +406,6 @@ html {
 }
 body {
   overflow-x: hidden;
-  overflow-y: hidden;
   --tw-leading: var(--leading-normal);
   line-height: var(--leading-normal);
 }

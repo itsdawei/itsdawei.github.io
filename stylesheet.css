@@ -20,7 +20,7 @@ html {
 }
 
 body {
-  @apply leading-normal overflow-x-hidden overflow-y-hidden;;
+  @apply leading-normal overflow-x-hidden;
 }
 
 .header-pattern {
