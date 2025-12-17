@@ -1,5 +1,6 @@
 {
   "devDependencies": {
+    "concurrently": "^8.2.2",
     "live-server": "^1.2.2",
     "tailwindcss": "^4.1.18"
   },
@@ -7,6 +8,6 @@
     "@tailwindcss/cli": "^4.1.18"
   },
   "scripts": {
-    "dev": "live-server"
+    "dev": "concurrently \"npx @tailwindcss/cli -i stylesheet.css -o output.css --watch\" \"live-server\""
   }
 }
