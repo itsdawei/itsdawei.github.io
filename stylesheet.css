@@ -1,25 +1,25 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
 
-:root {
-  --bg-color: #1a1b26; /* Background */
-  --surface-color: #2a2c3c; /* Surface */
-  --text-primary: #ffffff; /* Primary Text */
-  --text-secondary: #a5b2c1; /* Secondary Text */
-  --accent-color: #a4321c; /* USC Cardinal */
-  --highlight-color: #c2a34a; /* USC Gold */
-  --blue-color: #7aa2f7; /* Blue */
-  --purple-color: #bb9af7; /* Purple */
-  --yellow-color: #e0af68; /* Yellow */
-  --red-color: #ff5c7c; /* Red */
-  --green-color: #a3be8c; /* Green */
-  --orange-color: #d19a6a; /* Orange */
+@theme {
+  --color-bg: #1a1b26;
+  --color-surface: #2a2c3c;
+  --color-primary: #ffffff;
+  --color-secondary: #a5b2c1;
+  --color-accent: #a4321c;
+  --color-highlight: #c2a34a;
+  --color-blue: #7aa2f7;
+  --color-purple: #bb9af7;
+  --color-yellow: #e0af68;
+  --color-red: #FF4040;
+  --color-green: #a3be8c;
+  --color-orange: #d19a6a;
 }
 
-html,
+html {
+  @apply h-full flex justify-center;
+}
+
 body {
-  @apply text-secondary h-full min-h-full flex justify-center items-center;
   line-height: 1.5;
 }
 
@@ -73,13 +73,12 @@ body {
   align-items: center;
   box-sizing: border-box;
   width: 100vw; /* Full viewport width */
-  background-color: var(--accent-color);
+  @apply bg-accent text-primary;
   padding: 20px;
   margin-left: calc(-50vw + 50%);
   position: relative;
   z-index: 2;
   text-align: center;
-  color: var(--text-primary);
 
   .icon {
     margin-left: 0;
@@ -97,6 +96,33 @@ body {
 footer {
   text-align: right;
   color: gray;
+}
+
+#news {
+  .news-item {
+    @apply flex;
+  }
+
+  .news-date {
+    @apply basis-24 flex-none flex justify-center;
+    @apply inline-flex px-3 py-1 rounded-full bg-surface text-xs font-bold self-start;
+  }
+
+  .news-content {
+    @apply flex min-w-0 items-baseline;
+  }
+
+  .news-text {
+    @apply whitespace-normal break-words text-sm;
+  }
+
+  .news-divider {
+    @apply flex items-center;
+  }
+
+  .news-divider-line {
+    @apply flex-1 border-b border-gray-300;
+  }
 }
 
 @media (max-width: 800px) {

@@ -1,121 +1,403 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>David Haolong Lee's Personal Page</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css" />
-    <link rel="stylesheet" href="./output.css" />
-    <script type="text/javascript" src="https://livejs.com/live.js"></script>
-    <script src="data.js"></script>
-    <script src="render.js"></script>
-  </head>
-  <body class="flex flex-col justify-start items-center w-4/5 max-w-[800px] h-full max-h-screen bg-bg my-10 overflow-y-auto">
-    <main class="mb-10">
-      <section class="profile">
-        <object class="absolute inset-0 w-full h-full -z-10 opacity-15" data="./assets/pattern.svg" type="image/svg+xml"></object>
-        <div class="flex items-center gap-6">
-          <img class="w-52 h-52 max-w-full rounded-full object-cover border-4 border-highlight mb-5 shadow-lg" src="./assets/profile.jpg" alt="Profile picture of David Haolong Lee" />
-          <div class="flex flex-col items-start">
-            <h2 class="mb-4 font-bold">David Haolong Lee 李昊龙</h2>
-            <h3 class="mb-4">Software Engineer @ <i class="text-2xl fa-brands fa-apple"></i></h3>
-            <div class="flex flex-wrap justify-around items-center">
-              <a class="flex items-center text-inherit rounded-lg p-2 font-semibold" href="https://github.com/itsdawei" target="_blank" rel="noreferrer">
-                <i class="fab fa-github icon"></i>
-              </a>
-              <a class="flex items-center text-inherit rounded-lg p-2 font-semibold" href="https://scholar.google.com/citations?user=Y7Dr1bQAAAAJ&hl=en&oi=sra" target="_blank" rel="noreferrer">
-                <i class="ai ai-google-scholar-square icon"></i>
-              </a>
-              <a class="flex items-center text-inherit rounded-lg p-2 font-semibold" href="https://www.linkedin.com/in/lee-david-haolong/" target="_blank" rel="noreferrer">
-                <i class="fab fa-linkedin icon"></i>
-              </a>
-              <a class="flex items-center text-inherit rounded-lg p-2 font-semibold" href="./assets/documents/david_haolong_lee_resume.pdf" target="_blank" rel="noreferrer">
-                <i class="fas fa-briefcase icon"></i>
-              </a>
-              <a class="flex items-center text-inherit rounded-lg p-2 font-semibold" href="./assets/documents/david_haolong_lee_cv.pdf" target="_blank" rel="noreferrer">
-                <i class="fas fa-user-graduate icon"></i>
-              </a>
-            </div>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>David Haolong Lee's Personal Page</title>
+  <link rel="icon" type="image/png" href="./david.png" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css" />
+  <link rel="stylesheet" href="./output.css" />
+</head>
+
+<body
+  class="flex flex-col w-2/3 max-w-2/3 h-full min-h-full max-h-screen bg-bg overflow-y-auto text-secondary items-center">
+  <main class="mb-10">
+    <section class="profile">
+      <object class="absolute inset-0 w-full h-full -z-10 opacity-15" data="./assets/pattern.svg"
+        type="image/svg+xml"></object>
+      <div class="flex items-center gap-6">
+        <img class="w-52 h-52 max-w-full rounded-full object-cover border-4 border-highlight mb-5 shadow-lg"
+          src="./assets/profile.jpg" alt="Profile picture of David Haolong Lee" />
+        <div class="flex flex-col items-start">
+          <h2 class="mb-4 font-bold">David Haolong Lee 李昊龙</h2>
+          <h3 class="mb-4">Software Engineer @ <i class="text-2xl fa-brands fa-apple"></i></h3>
+          <div class="flex flex-wrap justify-around items-center">
+            <a class="flex items-center text-inherit rounded-lg p-2 font-semibold" href="https://github.com/itsdawei"
+              target="_blank" rel="noreferrer">
+              <i class="fab fa-github icon"></i>
+            </a>
+            <a class="flex items-center text-inherit rounded-lg p-2 font-semibold"
+              href="https://scholar.google.com/citations?user=Y7Dr1bQAAAAJ&hl=en&oi=sra" target="_blank"
+              rel="noreferrer">
+              <i class="ai ai-google-scholar-square icon"></i>
+            </a>
+            <a class="flex items-center text-inherit rounded-lg p-2 font-semibold"
+              href="https://www.linkedin.com/in/lee-david-haolong/" target="_blank" rel="noreferrer">
+              <i class="fab fa-linkedin icon"></i>
+            </a>
+            <a class="flex items-center text-inherit rounded-lg p-2 font-semibold"
+              href="./assets/documents/david_haolong_lee_resume.pdf" target="_blank" rel="noreferrer">
+              <i class="fas fa-briefcase icon"></i>
+            </a>
+            <a class="flex items-center text-inherit rounded-lg p-2 font-semibold"
+              href="./assets/documents/david_haolong_lee_cv.pdf" target="_blank" rel="noreferrer">
+              <i class="fas fa-user-graduate icon"></i>
+            </a>
           </div>
         </div>
-      </section>
-      <section>
-        <div class="flex flex-col space-y-4 py-6">
-          <p>
-            I'm currently working as a software engineer at <i class="fa-brands fa-apple"></i>.
-            I obtained my bachelor's (with <a class="hover:underline hover:underline-offset-4" href="https://viterbiundergrad.usc.edu/ehp">honors</a>) and master's degree in computer science from
-            <a class="hover:underline hover:underline-offset-4" href="https://www.usc.edu">USC</a>.
-            During my studies, I was a member of the
-            <a class="hover:underline hover:underline-offset-4" href="https://icaros.usc.edu">ICAROS lab</a> @ USC and the
-            <a class="hover:underline hover:underline-offset-4" href="https://viterbi-web.usc.edu/~cstheory">USC CS Theory Group</a>.
-            I am fortunate to be have the opportunity to work closely with and learn from
-            <a class="hover:underline hover:underline-offset-4" href="https://stefanosnikolaidis.net">Stefanos Nikolaidis</a>
-            and
-            <a class="hover:underline hover:underline-offset-4" href="https://www.david-kempe.com">David Kempe</a>.
-            I am also extremely thankful for my close friends and collaborators
-            <a class="hover:underline hover:underline-offset-4" href="https://aditya-prasad.com">Aditya Prasad</a>,
-            <a class="hover:underline hover:underline-offset-4" href="https://ramirodcv.github.io/">Ramiro Deo-Campo Vuong</a>,
-            <a class="hover:underline hover:underline-offset-4" href="https://yjennykim.github.io/">Jenny Kim</a>,
-            <a class="hover:underline hover:underline-offset-4" href="https://btjanaka.net">Bryon Tjanaka</a>, and
-            <a class="hover:underline hover:underline-offset-4" href="https://tehqin.github.io/">Matthew Fontaine</a>.
-          </p>
-          <p>
-            My research interests are continuous optimization, interpretability
-            in machine learning, robust and adaptive agents, and quality
-            diversity optimization. I am excited about deriving practically
-            useful algorithms from theoretical computer science.
-          </p>
-        </div>
-      </section>
-
-      <h2>News</h2>
-      <div id = "news-list" class="max-h-64 overflow-y-auto pr-2 mb-10"></div>
-      <script>
-        renderNews("news-list", news);
-      </script>
-
-      <h2>Softwares</h2>
-      <div id="project-grid"></div>
-      <script>
-        renderSoftwares("project-grid", projects);
-      </script>
-
-      <h2>Publications</h2>
-      <ul id="publication-list"></ul>
-      <script>
-        renderPublications("publication-list", publications);
-      </script>
-
-      <h2>Manuscripts</h2>
-      <ul id="manuscript-list"></ul>
-      <script>
-        renderManuscripts("manuscript-list", manuscripts);
-      </script>
-
-      <h2>Teachings</h2>
-      <ul id="teaching-list"></ul>
-      <script>
-        renderTeaching("teaching-list", teachings);
-      </script>
-
-      <!-- <section class="presentations"> -->
-      <!--   <h2>Presentations</h3> -->
-      <!--   <ul id="presentation-list"></ul> -->
-      <!-- </section> -->
-      <!-- <script> -->
-      <!--   renderPresentations("presentation-list", presentations); -->
-      <!-- </script> -->
-
-      <section>
-        <h2>Other</h2>
+      </div>
+    </section>
+    <section>
+      <div class="flex flex-col space-y-4 py-6">
         <p>
-          I spend most of my free time playing volleyball (indoor and beach).
-          I also enjoy cooking (my go-to choices are mostly chinese cuisine).
-          <!-- Vim and inkscape and using linux -->
+          I'm currently working as a software engineer at <i class="fa-brands fa-apple"></i>.
+          I obtained my bachelor's (with <a class="hover:underline hover:underline-offset-4"
+            href="https://viterbiundergrad.usc.edu/ehp">honors</a>) and master's degree in computer science from
+          <a class="hover:underline hover:underline-offset-4" href="https://www.usc.edu">USC</a>.
+          During my studies, I was a member of the
+          <a class="hover:underline hover:underline-offset-4" href="https://icaros.usc.edu">ICAROS lab</a> @ USC and the
+          <a class="hover:underline hover:underline-offset-4" href="https://viterbi-web.usc.edu/~cstheory">USC CS Theory
+            Group</a>.
+          I am fortunate to be have the opportunity to work closely with and learn from
+          <a class="hover:underline hover:underline-offset-4" href="https://stefanosnikolaidis.net">Stefanos
+            Nikolaidis</a>
+          and
+          <a class="hover:underline hover:underline-offset-4" href="https://www.david-kempe.com">David Kempe</a>.
+          I am also extremely thankful for my close friends and collaborators
+          <a class="hover:underline hover:underline-offset-4" href="https://aditya-prasad.com">Aditya Prasad</a>,
+          <a class="hover:underline hover:underline-offset-4" href="https://ramirodcv.github.io/">Ramiro Deo-Campo
+            Vuong</a>,
+          <a class="hover:underline hover:underline-offset-4" href="https://yjennykim.github.io/">Jenny Kim</a>,
+          <a class="hover:underline hover:underline-offset-4" href="https://btjanaka.net">Bryon Tjanaka</a>, and
+          <a class="hover:underline hover:underline-offset-4" href="https://tehqin.github.io/">Matthew Fontaine</a>.
         </p>
-      </section>
-    </main>
-    <footer><p>&copy; 2024 David Haolong Lee. All rights reserved.</p></footer>
-  </body>
+        <p>
+          My research interests are continuous optimization, interpretability
+          in machine learning, robust and adaptive agents, and quality
+          diversity optimization. I am excited about deriving practically
+          useful algorithms from theoretical computer science.
+        </p>
+      </div>
+    </section>
+
+    <section id="news">
+      <h2>News</h2>
+      <div class="space-y-2 mb-10">
+        <div class="news-item">
+          <div class="news-date">Aug 18th</div>
+          <div class="news-content">
+            <i class='fa-brands fa-apple fa-fw mr-2 shrink-0'></i>
+            <span class="news-text">Started working as a software engineer at Apple in the simulation team</span>
+          </div>
+        </div>
+
+        <div class="news-item">
+          <div class="news-date">May 16th</div>
+          <div class="news-content">
+            <i class='fa-solid fa-graduation-cap fa-fw mr-2 shrink-0'></i>
+            <span class="news-text">Graduated from University of Southern California with my master's in computer
+              science</span>
+          </div>
+        </div>
+
+        <div class="news-item">
+          <div class="news-date">Feb 28th</div>
+          <div class="news-content">
+            <i class='fa-solid fa-chalkboard fa-fw mr-2 shrink-0'></i>
+            <span class="news-text">My co-author Aditya presented <a
+                class="italic hover:underline hover:underline-offset-4" href="" target="_blank" rel="noreferrer">dpvis:
+                A Visual and Interactive Learning Tool for Dynamic Programming</a> at <a
+                class="hover:underline hover:underline-offset-4" href="https://sigcse2025.sigcse.org" target="_blank"
+                rel="noreferrer">SIGCSE 2025</a> in Pittsburg, Pennsylvania</span>
+          </div>
+        </div>
+
+        <!-- Year divider -->
+        <div class="news-divider">
+          <div class="news-date">2024</div>
+          <div class="news-divider-line"></div>
+        </div>
+
+        <div class="news-item">
+          <div class="news-date">Oct 31st</div>
+          <div class="news-content">
+            <i class='fa-solid fa-chalkboard fa-fw mr-2 shrink-0'></i>
+            <span class="news-text">Presented <a class="italic hover:underline hover:underline-offset-4"
+                href="https://davidhaolong.com/slides/theory_lunch_dpvis" target="_blank" rel="noreferrer">dpvis: A
+                Visual and Interactive Learning Tool for Dynamic Programming</a> at <a
+                class="hover:underline hover:underline-offset-4"
+                href="https://viterbi-web.usc.edu/~cstheory/theory-lunch.html" target="_blank" rel="noreferrer">USC
+                Theory Lunch</a></span>
+          </div>
+        </div>
+
+        <div class="news-item">
+          <div class="news-date">Jul 16th</div>
+          <div class="news-content">
+            <i class='fa-solid fa-chalkboard fa-fw mr-2 shrink-0'></i>
+            <span class="news-text">Presented <a class="italic hover:underline hover:underline-offset-4"
+                href="https://davidhaolong.com/slides/dds" target="_blank" rel="noreferrer">Density Descent Search for
+                Diversity Optimization</a> at <a class="hover:underline hover:underline-offset-4"
+                href="https://gecco-2024.sigevo.org" target="_blank" rel="noreferrer">GECCO 2024</a> in Melbourne,
+              Australia</span>
+          </div>
+        </div>
+
+        <div class="news-item">
+          <div class="news-date">Apr 25th</div>
+          <div class="news-content">
+            <i class='fa-solid fa-chalkboard fa-fw mr-2 shrink-0'></i>
+            <span class="news-text">Presented my bachelor's honors thesis <a
+                class="italic hover:underline hover:underline-offset-4"
+                href="https://davidhaolong.com/slides/bachelors_thesis" target="_blank" rel="noreferrer">Quality
+                Diversity Optimization: A Modular Framework and Continuous Density Estimation</a></span>
+          </div>
+        </div>
+
+        <!-- Year divider -->
+        <div class="news-divider">
+          <div class="news-date">2023</div>
+          <div class="news-divider-line"></div>
+        </div>
+
+        <div class="news-item">
+          <div class="news-date">Dec 6th</div>
+          <div class="news-content">
+            <i class='fa-solid fa-screwdriver-wrench fa-fw mr-2 shrink-0'></i>
+            <span class="news-text">Released <a class="italic hover:underline hover:underline-offset-4"
+                href="https://dpvis.readthedocs.io/en/latest" target="_blank" rel="noreferrer">dpvis</a>, a simple
+              Python library for interactive visualizations of dynamic programming algorithms</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <h2>Softwares</h2>
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mb-4">
+      <a href="https://dpvis.readthedocs.io/en/latest" target="_blank" rel="noreferrer"
+        class="block p-4 bg-gray-800 hover:bg-gray-700 rounded-lg transition-colors duration-200">
+        <div class="p-4">
+          <h3 class="text-white text-lg font-bold mb-1">dpvis</h3>
+          <p class="text-secondary text-sm mb-3">Open-source Python library for interactive visualizations of dynamic
+            programming algorithms, with self-checks and an event-driven architecture built with Plotly Dash.</p>
+          <p class="text-sm text-gray-400 mb-2">🛠️ Python, Plotly Dash, GitHub Actions, mkdocs</p>
+          <div class="flex flex-wrap gap-3">
+            <span class="text-blue-400 hover:text-white underline text-sm">Website</span>
+            <span class="text-blue-400 hover:text-white underline text-sm">GitHub</span>
+            <span class="text-blue-400 hover:text-white underline text-sm">Paper</span>
+          </div>
+        </div>
+      </a>
+
+      <a href="https://pyribs.org" target="_blank" rel="noreferrer"
+        class="block p-4 bg-gray-800 hover:bg-gray-700 rounded-lg transition-colors duration-200">
+        <div class="p-4">
+          <h3 class="text-white text-lg font-bold mb-1">pyribs</h3>
+          <p class="text-secondary text-sm mb-3">A bare-bones Python library for quality diversity (QD) optimization.
+            Pyribs implements the highly modular Rapid Illumination of Behavior Space (RIBS) framework for QD
+            optimization.</p>
+          <p class="text-sm text-gray-400 mb-2">🛠️ Python, JAX, PyTorch, GitHub</p>
+          <div class="flex flex-wrap gap-3">
+            <span class="text-blue-400 hover:text-white underline text-sm">Website</span>
+            <span class="text-blue-400 hover:text-white underline text-sm">GitHub</span>
+            <span class="text-blue-400 hover:text-white underline text-sm">Paper</span>
+          </div>
+        </div>
+      </a>
+
+      <a href="#" target="_blank" rel="noreferrer"
+        class="block p-4 bg-gray-800 hover:bg-gray-700 rounded-lg transition-colors duration-200">
+        <div class="p-4">
+          <h3 class="text-white text-lg font-bold mb-1">DoorDrink</h3>
+          <p class="text-secondary text-sm mb-3">Android app for coffee shop discovery and real-time ordering with
+            Firebase backend and routing APIs.</p>
+          <p class="text-sm text-gray-400 mb-2">🛠️ Java, Firebase, Google Maps API</p>
+          <div class="flex flex-wrap gap-3">
+          </div>
+        </div>
+      </a>
+    </div>
+
+    <h2>Publications</h2>
+    <div>
+      <div class="border-l-4 border-accent pl-4 mb-4 ml-4">
+        <span class="font-bold text-white">dpvis: A Visual and Interactive Learning Tool for Dynamic Programming</span>
+        <br />
+        <span class='font-bold'>David H. Lee</span>, Aditya Prasad, Ramiro Deo-Campo Vuong, Tianyu Wang, Eric Han, David
+        Kempe
+        <br />
+        <span class="text-gray-500 italic">Technical Symposium on Computer Science Education (SIGCSE TS), Feb.
+          2025</span>
+        <br />
+        <a href="https://arxiv.org/abs/2411.07705" target="_blank" rel="noreferrer">
+          <i class="ai ai-arxiv icon"></i>arXiv
+        </a>
+        <a href="https://davidhaolong.com/slides/theory_lunch_dpvis" target="_blank" rel="noreferrer">
+          <i class="fas fa-desktop icon"></i>Slides
+        </a>
+      </div>
+
+      <div class="border-l-4 border-accent pl-4 mb-4 ml-4">
+        <span class="font-bold text-white">Density Descent Search for Diversity Optimization</span>
+        <br />
+        <span class='font-bold'>David H. Lee</span>, Anishalakshmi V. Palaparthi, Matthew C. Fontaine, Bryon Tjanaka,
+        Stefanos Nikolaidis
+        <br />
+        <span class="text-gray-500 italic">Genetic and Evolutionary Computation Conference (GECCO), Jul. 2024</span>
+        <br />
+        <a href="https://arxiv.org/abs/2312.11331" target="_blank" rel="noreferrer">
+          <i class="ai ai-arxiv icon"></i>arXiv
+        </a>
+        <a href="https://davidhaolong.com/slides/dds" target="_blank" rel="noreferrer">
+          <i class="fas fa-desktop icon"></i>Slides
+        </a>
+      </div>
+
+      <div class="border-l-4 border-accent pl-4 mb-4 ml-4">
+        <span class="font-bold text-white">Training Diverse High-Dimensional Controllers by Scaling Covariance Matrix
+          Adaptation MAP-Annealing</span>
+        <br />
+        Bryon Tjanaka, Matthew C. Fontaine, <span class='font-bold'>David H. Lee</span>, Aniruddha Kalkar, Stefanos
+        Nikolaidis
+        <br />
+        <span class="text-gray-500 italic">IEEE Robotics and Automation Letters (RA-L), vol. 8, no. 10, pp. 6771-6778,
+          Oct. 2023</span>
+        <br />
+        <a href="https://arxiv.org/abs/2210.02622" target="_blank" rel="noreferrer">
+          <i class="ai ai-arxiv icon"></i>arXiv
+        </a>
+        <a href="https://github.com/icaros-usc/scaling-cma-mae" target="_blank" rel="noreferrer">
+          <i class="fab fa-github icon"></i>GitHub
+        </a>
+        <a href="https://scalingcmamae.github.io/" target="_blank" rel="noreferrer">
+          <i class="fas fa-globe-americas icon"></i>Website
+        </a>
+      </div>
+
+      <div class="border-l-4 border-accent pl-4 mb-4 ml-4">
+        <span class="font-bold text-white">pyribs: A Bare-Bones Python Library for Quality Diversity Optimization</span>
+        <br />
+        Bryon Tjanaka, Matthew C. Fontaine, <span class='font-bold'>David H. Lee</span>, Yulun Zhang, Nivedit Reddy
+        Balam, Nathaniel Dennler, Sujay S. Garlanka, Nikitas Dimitri Klapsis, Stefanos Nikolaidis
+        <br />
+        <span class="text-gray-500 italic">Genetic and Evolutionary Computation Conference (GECCO), Jul. 2023</span>
+        <br />
+        <a href="https://arxiv.org/abs/2303.00191" target="_blank" rel="noreferrer">
+          <i class="ai ai-arxiv icon"></i>arXiv
+        </a>
+        <a href="https://github.com/icaros-usc/pyribs" target="_blank" rel="noreferrer">
+          <i class="fab fa-github icon"></i>GitHub
+        </a>
+        <a href="https://pyribs.org/" target="_blank" rel="noreferrer">
+          <i class="fas fa-globe-americas icon"></i>Website
+        </a>
+      </div>
+    </div>
+
+    <h2>Manuscripts</h2>
+    <div>
+      <div class="border-l-4 border-accent pl-4 mb-4 ml-4">
+        <div class="flex items-start justify-between">
+          <div>
+            <span class="font-bold text-white">Quality Diversity Optimization: A Modular Framework and Continuous
+              Density Estimation</span>
+            <br />
+            <span class='font-bold'>David H. Lee</span>
+            <br />
+            <a href="./assets/documents/bachelors_thesis.pdf" target="_blank" rel="noreferrer">
+              <i class="far fa-file-pdf icon"></i>PDF
+            </a>
+            <a href="https://davidhaolong.com/slides/bachelors_thesis" target="_blank" rel="noreferrer">
+              <i class="fas fa-desktop icon"></i>Slides
+            </a>
+          </div>
+          <span class="text-sm text-gray-400 mt-1 ml-8 pl-8 whitespace-nowrap">May 2024</span>
+        </div>
+      </div>
+
+      <div class="border-l-4 border-accent pl-4 mb-4 ml-4">
+        <div class="flex items-start justify-between">
+          <div>
+            <span class="font-bold text-white">Upgrading CMA-ME to CMA-MAE on the Sphere Benchmark</span>
+            <br />
+            <span class='font-bold'>David H. Lee</span>, Bryon Tjanaka, Nivedit Reddy Balam, Matthew C. Fontaine,
+            Stefanos Nikolaidis
+            <br />
+            <a href="https://docs.pyribs.org/en/stable/tutorials/cma_mae.html" target="_blank" rel="noreferrer">
+              <i class="fas fa-globe-americas icon"></i>Website
+            </a>
+          </div>
+          <span class="text-sm text-gray-400 mt-1 ml-8 pl-8 whitespace-nowrap">Mar. 2023</span>
+        </div>
+      </div>
+
+      <div class="border-l-4 border-accent pl-4 mb-4 ml-4">
+        <div class="flex items-start justify-between">
+          <div>
+            <span class="font-bold text-white">An Overview of Low-Rank Matrix Completion using Convex Optimization
+              Techniques</span>
+            <br />
+            Ramiro Deo-Campo Vuong, <span class='font-bold'>David H. Lee</span>, Aditya Prasad, Yibo Wen
+            <br />
+            <a href="./assets/documents/lrmc.pdf" target="_blank" rel="noreferrer">
+              <i class="far fa-file-pdf icon"></i>PDF
+            </a>
+            <a href="https://github.com/itsdawei/NBA-matrix-completion" target="_blank" rel="noreferrer">
+              <i class="fab fa-github icon"></i>GitHub
+            </a>
+          </div>
+          <span class="text-sm text-gray-400 mt-1 ml-8 pl-8 whitespace-nowrap">May 2022</span>
+        </div>
+      </div>
+    </div>
+
+    <h2>Teachings</h2>
+    <div>
+      <div class="border-l-4 border-accent pl-4 mb-4 ml-4">
+        <div class="flex items-start justify-between">
+          <div>
+            <span class="font-bold text-white">Introduction to Algorithms and the Theory of Computing</span>
+            <p class="text-sm text-gray-400 italic">CSCI 270 @ USC, Teaching Assistant</p>
+          </div>
+          <span class="text-sm text-gray-400 mt-1 ml-8 pl-8 whitespace-nowrap"><a href="https://bytes.usc.edu/cs270/"
+              target="_blank" rel="noreferrer">Spring 2024</a></span>
+        </div>
+      </div>
+
+      <div class="border-l-4 border-accent pl-4 mb-4 ml-4">
+        <div class="flex items-start justify-between">
+          <div>
+            <span class="font-bold text-white">Discrete Methods in Computer Science</span>
+            <p class="text-sm text-gray-400 italic">CSCI 170 @ USC, Teaching Assistant</p>
+          </div>
+          <span class="text-sm text-gray-400 mt-1 ml-8 pl-8 whitespace-nowrap">Spring 2023, Summer 2023, Fall
+            2024</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- <section class="presentations"> -->
+    <!--   <h2>Presentations</h3> -->
+    <!--   <ul id="presentation-list"></ul> -->
+    <!-- </section> -->
+    <!-- <script> -->
+    <!--   renderPresentations("presentation-list", presentations); -->
+    <!-- </script> -->
+
+    <section>
+      <h2>Other</h2>
+      <p>
+        I spend most of my free time playing volleyball (indoor and beach).
+        I also enjoy cooking (my go-to choices are mostly chinese cuisine).
+        <!-- Vim and inkscape and using linux -->
+      </p>
+    </section>
+  </main>
+  <footer>
+    <p>&copy; 2024 David Haolong Lee. All rights reserved.</p>
+  </footer>
+</body>
+
 </html>

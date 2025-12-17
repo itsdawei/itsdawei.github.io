@@ -1,0 +1,12 @@
+{
+  "devDependencies": {
+    "live-server": "^1.2.2",
+    "tailwindcss": "^4.1.18"
+  },
+  "dependencies": {
+    "@tailwindcss/cli": "^4.1.18"
+  },
+  "scripts": {
+    "dev": "live-server"
+  }
+}
